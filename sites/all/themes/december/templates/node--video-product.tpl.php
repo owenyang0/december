@@ -12,12 +12,8 @@
   <div class="product__main">
     <?php echo $node->field_main_text['und']['0']['value']; ?>
   </div>
-  <ul class="product__photo">
-    <?php
-      foreach ($node->field_photo['und'] as $photo) {
-        echo '<li class="product__photo-item">' . $photo['value'] . '</li>';
-      }
-    ?>
+  <ul class="product__video">
+    video
   </ul>
 </div>
 
