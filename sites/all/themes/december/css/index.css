@@ -1,0 +1,361 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+input, textarea, select {
+  margin: 0; }
+
+input:focus, textarea:focus, select:focus {
+  outline: none; }
+
+textarea {
+  overflow: auto; }
+
+button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="reset"]::-moz-focus-inner {
+  padding: 0 !important;
+  border: 0 none !important; }
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../iconfont/fontello.eot');
+  src: url('../iconfont/fontello.eot#iefix') format('embedded-opentype'), url('../iconfont/fontello.woff') format('woff'), url('../iconfont/fontello.ttf') format('truetype'), url('../iconfont/fontello.svg#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon--"]:before, [class*="icon--"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em; }
+
+.icon--qq:before {
+  content: '\e800'; }
+
+.icon--wechat:before {
+  content: '\e801'; }
+
+.icon--weibo:before {
+  content: '\e802'; }
+
+.icon--up-arrow:before {
+  content: '\e803'; }
+
+.icon--close:before {
+  content: '\e804'; }
+
+.site-nav {
+  background: black; }
+  .site-nav .site-nav__logo--fix {
+    display: none; }
+  .site-nav.fix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1; }
+    .site-nav.fix .site-nav__logo {
+      display: none; }
+    .site-nav.fix .site-nav__logo--fix {
+      display: inline-block; }
+
+.site-nav__list {
+  text-align: center;
+  padding: 20px; }
+  .site-nav__list li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px; }
+  .site-nav__list a {
+    color: #c88e50; }
+
+.site-nav__logo img {
+  width: 60px; }
+
+.btn {
+  display: inline-block;
+  padding: 8px 25px;
+  color: black;
+  font-size: 12px;
+  border: 1px solid; }
+  .btn:hover {
+    color: white;
+    background: #c88e50;
+    border-color: #c88e50; }
+
+.btn--light {
+  color: #c88e50; }
+  .btn--light:hover {
+    color: white;
+    background: #c88e50;
+    border-color: #c88e50; }
+
+.footer {
+  text-align: center; }
+  .footer p {
+    margin: 15px 0; }
+
+.footer__to-top {
+  text-align: center; }
+  .footer__to-top a {
+    display: block;
+    padding: 10px;
+    color: white;
+    font-size: 48px;
+    background: black; }
+    .footer__to-top a:hover {
+      background: #c88e50; }
+
+.social-media {
+  margin: 20px 0; }
+  .social-media li {
+    display: inline-block; }
+  .social-media .icon {
+    font-size: 20px;
+    padding: 5px;
+    margin: 0 5px;
+    display: inline-block; }
+
+.lightbox {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  padding-top: 200px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in; }
+  .lightbox.active {
+    opacity: 1;
+    visibility: visible; }
+
+.lightbox__close {
+  position: absolute;
+  right: 30px;
+  top: 100px;
+  color: #c88e50;
+  font-size: 80px; }
+
+.lightbox__intro {
+  color: white; }
+
+.lightbox__img {
+  padding: 10px;
+  background: white; }
+
+.homepage__hero {
+  background: url("/sites/all/themes/december/images/hero.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  z-index: -1; }
+  .homepage__hero .homepage__logo-wrapper {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 300px; }
+  .homepage__hero .homepage__logo {
+    width: 100%; }
+
+.homepage__content {
+  background: transparent;
+  position: relative; }
+  .homepage__content:before {
+    content: ' ';
+    display: block;
+    background-image: url("/sites/all/themes/december/images/logo_text.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: absolute;
+    top: -500px;
+    left: 40%;
+    width: 20%;
+    height: 500px; }
+
+.homepage__content-wrapper {
+  background: white; }
+
+.homepage__product, .homepage__service {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center; }
+
+.homepage__title, .lightbox__title {
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #c88e50;
+  position: relative; }
+  .homepage__title:after, .lightbox__title:after {
+    content: ' ';
+    border-bottom: 2px solid;
+    display: block;
+    position: absolute;
+    min-width: 20px;
+    left: 49%;
+    right: 49%;
+    padding-top: 20px; }
+
+.homepage__intro, .lightbox__intro {
+  margin: 50px 0;
+  line-height: 16px; }
+  .homepage__intro p, .lightbox__intro p {
+    padding: 10px 0;
+    font-size: 12px; }
+
+.homepage__product-detail {
+  width: 100%;
+  height: 430px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .homepage__product-detail .homepage__product-info {
+    opacity: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #c88e50;
+    transition: 0.3s ease-in; }
+  .homepage__product-detail .homepage__product-title {
+    font-size: 30px;
+    padding: 15% 0 50px; }
+    .homepage__product-detail .homepage__product-title:after {
+      content: ' ';
+      border-bottom: 2px solid;
+      display: block;
+      position: absolute;
+      min-width: 20px;
+      left: 49%;
+      right: 49%;
+      padding-top: 20px; }
+  .homepage__product-detail .homepage__product-date-place {
+    margin-bottom: 30px; }
+  .homepage__product-detail:hover .homepage__product-info {
+    opacity: 1; }
+
+.homepage__product-detail--row {
+  float: left;
+  width: 49%;
+  height: 300px;
+  margin: 15px 0; }
+  .homepage__product-detail--row:first-child {
+    margin-right: 2%; }
+
+.homepage__sub-hero {
+  height: 400px;
+  background-image: url('/sites/all/themes/december/images/service.png');
+  background-attachment: fixed; }
+
+.product__detail {
+  padding: 90px 150px 50px;
+  text-align: center;
+  font-size: 12px; }
+
+.product__title {
+  margin: 10px 0;
+  font-size: 28px; }
+  .product__title:before {
+    content: '「'; }
+  .product__title:after {
+    content: '」'; }
+
+.product__info {
+  color: #666;
+  margin: 10px 0;
+  line-height: 22px; }
+  .product__info:after {
+    content: ' ';
+    display: block;
+    margin: 15px auto;
+    width: 30px;
+    border-bottom: 1px solid; }
+
+.product__main {
+  margin: 20px 0 30px;
+  line-height: 22px; }
+
+.product__photo-item {
+  margin: 10px 0; }
+  .product__photo-item img {
+    width: 100% !important;
+    height: auto !important; }
+
+.related {
+  padding: 50px 150px;
+  text-align: center; }
+
+.related__title {
+  font-size: 20px;
+  margin: 0 0 20px; }
+
+.related__item {
+  float: left;
+  width: 31%;
+  height: 400px;
+  margin-right: 2%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .related__item:last-child {
+    margin-right: 0; }
+
+body {
+  color: #333;
+  font-family: Times, "Microsoft Yahei", STHeiti, sans-serif; }
+
+h1, h2, h3, h4 {
+  font-weight: normal; }
+
+a {
+  color: #333;
+  transition: 0.2s ease-in; }
+  a:hover {
+    color: #c88e50; }
+
+.row:after {
+  clear: both;
+  content: ' ';
+  display: table; }

@@ -1,0 +1,16 @@
+{
+  "name": "december",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.8.8",
+    "gulp-sass": "^0.7.3",
+    "del": "^0.1.3"
+  }
+}

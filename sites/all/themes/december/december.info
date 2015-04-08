@@ -1,0 +1,18 @@
+name = December
+description = December Wedding
+package = december
+version = VERSION
+core = 7.x
+
+stylesheets[screen][] = css/index.css
+
+scripts[] = js/jquery-1.11.2.js
+scripts[] = js/index.js
+
+regions[content] = Content
+
+; Information added by Drupal.org packaging script on 2014-11-19
+version = "7.34"
+project = "drupal"
+datestamp = "1416429488"
+

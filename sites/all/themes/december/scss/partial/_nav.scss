@@ -1,0 +1,37 @@
+.site-nav {
+  background: black;
+
+  .site-nav__logo--fix {
+    display: none;
+  }
+
+  &.fix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    .site-nav__logo {
+      display: none;
+    }
+    .site-nav__logo--fix {
+      display: inline-block;
+    }
+  }
+}
+.site-nav__list {
+  text-align: center;
+  padding: 20px;
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px;
+  }
+  a {
+    color: $gold;
+  }
+}
+
+.site-nav__logo img {
+  width: 60px;
+}

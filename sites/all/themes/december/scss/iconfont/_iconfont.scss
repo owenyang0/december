@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../iconfont/fontello.eot');
+  src: url('../iconfont/fontello.eot#iefix') format('embedded-opentype'),
+  url('../iconfont/fontello.woff') format('woff'),
+  url('../iconfont/fontello.ttf') format('truetype'),
+  url('../iconfont/fontello.svg#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon--"]:before, [class*="icon--"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+}
+.icon--qq:before { content: '\e800'; }
+.icon--wechat:before { content: '\e801'; }
+.icon--weibo:before { content: '\e802'; }
+.icon--up-arrow:before { content: '\e803'; }
+.icon--close:before { content: '\e804'; }
