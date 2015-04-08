@@ -44,6 +44,13 @@
   }
 }
 
+.product__video {
+  embed {
+    width: 100%;
+    height: 500px;
+  }
+}
+
 .related {
   padding: 50px 150px;
   text-align: center;

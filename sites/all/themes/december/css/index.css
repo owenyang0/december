@@ -323,6 +323,10 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
     width: 100% !important;
     height: auto !important; }
 
+.product__video embed {
+  width: 100%;
+  height: 500px; }
+
 .related {
   padding: 50px 150px;
   text-align: center; }
