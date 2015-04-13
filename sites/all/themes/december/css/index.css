@@ -346,6 +346,9 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
   .related__item:last-child {
     margin-right: 0; }
 
+.products__unit .background .img {
+  height: 300px; }
+
 body {
   color: #333;
   font-family: Times, "Microsoft Yahei", STHeiti, sans-serif; }

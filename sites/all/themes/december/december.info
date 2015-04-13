@@ -9,6 +9,7 @@ stylesheets[screen][] = css/index.css
 scripts[] = js/jquery-1.11.2.js
 scripts[] = js/libs/react.js
 scripts[] = js/libs/JSXTransformer.js
+scripts[] = js/libs/ramda.min.js
 scripts[] = js/index.js
 
 regions[content] = Content
