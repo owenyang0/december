@@ -12,6 +12,8 @@
 <!--[if lte IE 8]>
   <script type="text/javascript" src="/sites/all/themes/december/js/ie8.js"></script>
 <![endif]-->
+
+<script type="text/jsx" src="/sites/all/themes/december/js/products/products.jsx"></script>
 <body>
   <?php echo $page; ?>
 </body>
