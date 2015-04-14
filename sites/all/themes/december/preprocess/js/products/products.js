@@ -85,11 +85,5 @@ var Products = React.createClass({
 });
 
 
-
-$(function() {
-  React.render(
-    <Products />,
-    document.querySelector('.standard__content')
-  );
-});
+module.exports = Products;
 

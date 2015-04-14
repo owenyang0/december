@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "watchify preprocess/js/products/products.js -o js/products.js -v",
-    "build": "NODE_ENV=production browserify preprocess/js/products/products.js | uglifyjs -cm > js/products.js"
+    "start": "watchify preprocess/js/products/index.js -o js/products.js -v",
+    "build": "NODE_ENV=production browserify preprocess/js/products/index.js | uglifyjs -cm > js/products.js"
   },
   "author": "",
   "license": "ISC",
