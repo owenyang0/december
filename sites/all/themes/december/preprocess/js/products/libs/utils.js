@@ -36,7 +36,7 @@ function genProducts(val, idx) {
 
   var rowOne = (
     <div className="products__unit--row-one">
-      <Product key={idx} isVideo={isVideo(currentVal)} bg={bg} title={currentVal.title} info={currentVal._info} />
+      <Product key={idx} isVideo={isVideo(currentVal)} bg={bg} title={currentVal.title} info={getInfo(currentVal)} />
     </div>
   );
 
@@ -52,7 +52,7 @@ function genProducts(val, idx) {
       bg = getBackground(val);
 
       return (
-        <Product key={idx} isVideo={isVideo(val)} bg={bg} title={val.title} info={val._info} />
+        <Product key={idx} isVideo={isVideo(val)} bg={bg} title={val.title} info={getInfo(val)} />
       );
     }, val);
 
@@ -83,4 +83,8 @@ function getBackground(product) {
   }
 
   return R.ifElse(isVideo, getVideo, getPhoto)(product);
+}
+
+function getInfo(product) {
+  return R.prop(1, /<p>(.*?)<\/p>/.exec(product._info));
 }
