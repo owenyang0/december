@@ -425,7 +425,9 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
 .product__detail {
   padding: 90px 150px 50px;
   text-align: center;
-  font-size: 12px; }
+  font-size: 12px;
+  max-width: 960px;
+  margin: 0 auto; }
 
 .product__title {
   margin: 10px 0;
@@ -481,9 +483,29 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
 
 .products__unit {
   margin: 50px 0; }
+  .products__unit .product {
+    margin: 50px 0; }
   .products__unit .background .img {
-    height: 300px; }
-  .products__unit:nth-child(3n), .products__unit:nth-child(3n-1) {
+    height: 350px; }
+  .products__unit .desc {
+    margin-top: 30px;
+    text-align: right; }
+  .products__unit .desc__title {
+    font-size: 20px; }
+  .products__unit .desc__info {
+    color: #7e7e7e;
+    padding: 10px 0; }
+    .products__unit .desc__info:after {
+      content: '>'; }
+
+.products__unit--row-two {
+  *zoom: 1; }
+  .products__unit--row-two:before, .products__unit--row-two:after {
+    content: '';
+    display: table; }
+  .products__unit--row-two:after {
+    clear: both; }
+  .products__unit--row-two .product {
     *zoom: 1;
     float: left;
     clear: none;
@@ -491,15 +513,20 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
     width: 48.5%;
     margin-left: 0%;
     margin-right: 3%; }
-    .products__unit:nth-child(3n):before, .products__unit:nth-child(3n):after, .products__unit:nth-child(3n-1):before, .products__unit:nth-child(3n-1):after {
+    .products__unit--row-two .product:before, .products__unit--row-two .product:after {
       content: '';
       display: table; }
-    .products__unit:nth-child(3n):after, .products__unit:nth-child(3n-1):after {
+    .products__unit--row-two .product:after {
       clear: both; }
-    .products__unit:nth-child(3n):last-child, .products__unit:nth-child(3n-1):last-child {
+    .products__unit--row-two .product:last-child {
       margin-right: 0%; }
-  .products__unit:nth-child(3n+1) {
-    clear: left; }
+  .products__unit--row-two .background {
+    text-align: right; }
+    .products__unit--row-two .background .img {
+      height: 260px; }
+    .products__unit--row-two .background embed {
+      height: 220px;
+      width: 80%; }
 
 body {
   color: #333;
