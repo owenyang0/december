@@ -19,6 +19,8 @@
   "devDependencies": {
     "browserify": "^9.0.8",
     "envify": "^3.4.0",
+    "jeet": "^6.1.2",
+    "node-sass": "^0.9.3",
     "ramda": "^0.13.0",
     "reactify": "^1.1.0",
     "uglifyjs": "^2.4.10",

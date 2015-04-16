@@ -74,7 +74,18 @@
 }
 
 .products__unit {
+  margin: 50px 0;
   .background .img {
     height: 300px;
+  }
+
+
+  &:nth-child(3n),
+  &:nth-child(3n-1) {
+    @include col(1/2);
+  }
+
+  &:nth-child(3n+1) {
+    clear: left;
   }
 }

@@ -5,7 +5,13 @@ var del = require('del');
 var config = {
   sass: {
     path: 'scss/',
-    extension: '.scss'
+    extension: '.scss',
+    options: {
+      errLogToConsole: true,
+      includePaths: [
+        'node_modules/jeet/scss/'
+      ]
+    }
   },
   css: {
     path: 'css/'
@@ -18,7 +24,7 @@ gulp.task('clean', function(cb){
 
 gulp.task('sass', function(){
   return gulp.src(config.sass.path + '**/*' + config.sass.extension)
-             .pipe(sass())
+             .pipe(sass(config.sass.options))
              .pipe(gulp.dest(config.css.path));
 });
 
