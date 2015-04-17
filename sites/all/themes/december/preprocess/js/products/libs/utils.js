@@ -14,7 +14,8 @@ var utils = {
     genProductsUnit,
     chunk(3),
     R.take(6)
-  )
+  ),
+  chunk: chunk
 };
 
 module.exports = utils;

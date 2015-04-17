@@ -28,7 +28,7 @@ var Products = React.createClass({
 
   render: function () {
 
-    var products = utils.productsUnit(this.state.products);
+    var products = utils.productsUnit(this.props.data);
 
     return (
       <ul className="products">
