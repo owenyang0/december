@@ -1,6 +1,6 @@
 <nav class="site-nav">
   <ul class="site-nav__list">
-    <li class="site-nav__item"><a href="#">作品展示</a></li>
+    <li class="site-nav__item"><a href="/products-list">作品展示</a></li>
     <li class="site-nav__item"><a href="#">服务流程</a></li>
     <li class="site-nav__logo">
       <img src="/sites/all/themes/december/images/logo.png">

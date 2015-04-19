@@ -24,7 +24,3 @@ $results = $view->result;
     <?php endforeach; ?>
   </ul>
 </div>
-
-
-
-<?php include_once("partials/footer.tpl.inc"); ?>

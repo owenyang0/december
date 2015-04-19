@@ -38,7 +38,14 @@
       $('.' + activeClassName).hide();
       $('.' + className).fadeIn();
 
+      // TODO: test
+      $next.appendTo($('.' + className + ' .text'));
+
       console.log($(this).attr('for'));
     });
+
+    // TODO: test
+    var $next = $('.product__next');
+    $next.appendTo($('.views-row-1 .text'));
   });
 })(jQuery);
