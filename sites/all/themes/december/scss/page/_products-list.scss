@@ -12,7 +12,9 @@
   .image {
     width: 75%;
     float: left;
-    height: 430px;
+    height: 350px;
+
+    @include bg-img();
   }
 }
 
@@ -37,6 +39,10 @@
   }
 }
 
+.product__next {
+  float: left;
+}
+
 .product__next-unit {
   height: 24px;
 
@@ -46,4 +52,8 @@
     }
     @include title-quote()
   }
+}
+
+.views-row {
+  display: none;
 }

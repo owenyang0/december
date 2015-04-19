@@ -24,6 +24,21 @@
       if (!isToFix && $nav.hasClass('fix')) {
         $nav.removeClass('fix');
       }
-    })
+    });
+
+    $('.product__next > li').click(function (e) {
+      e.preventDefault();
+
+      var className = $(this).attr('for');
+      var activeClassName = $('li a.active').parent().attr('for');
+
+      $('li a.active').removeClass('active');
+      $(this).find('a').addClass('active');
+
+      $('.' + activeClassName).hide();
+      $('.' + className).fadeIn();
+
+      console.log($(this).attr('for'));
+    });
   });
 })(jQuery);

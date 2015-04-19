@@ -567,7 +567,10 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
   .product__detail--list .image {
     width: 75%;
     float: left;
-    height: 430px; }
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
 
 .product__content {
   padding-bottom: 50px; }
@@ -585,6 +588,9 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
     margin: 20px 0;
     line-height: 22px; }
 
+.product__next {
+  float: left; }
+
 .product__next-unit {
   height: 24px; }
   .product__next-unit a.active {
@@ -593,6 +599,9 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
     content: '「'; }
   .product__next-unit a:after {
     content: '」'; }
+
+.views-row {
+  display: none; }
 
 body {
   color: #333;
