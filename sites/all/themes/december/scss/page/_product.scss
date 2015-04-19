@@ -12,12 +12,7 @@
   margin: 10px 0;
   font-size: 28px;
 
-  &:before {
-    content: '「';
-  }
-  &:after {
-    content: '」';
-  }
+  @include title-quote();
 }
 
 .product__info {

@@ -260,6 +260,10 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
     background: #c88e50;
     border-color: #c88e50; }
 
+.btn--more {
+  padding: 5px 22px;
+  background-color: transparent; }
+
 .footer {
   text-align: center; }
   .footer p {
@@ -546,6 +550,49 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
   .products__unit--row-two .product:last-child .img {
     margin-right: 0;
     margin-left: auto; }
+
+.product__detail--list {
+  *zoom: 1; }
+  .product__detail--list:before, .product__detail--list:after {
+    content: '';
+    display: table; }
+  .product__detail--list:after {
+    clear: both; }
+  .product__detail--list .text {
+    padding-right: 1%;
+    width: 24%;
+    max-width: 180px;
+    float: left;
+    text-align: left; }
+  .product__detail--list .image {
+    width: 75%;
+    float: left;
+    height: 430px; }
+
+.product__content {
+  padding-bottom: 50px; }
+  .product__content .title {
+    font-size: 24px;
+    margin-left: -13px; }
+    .product__content .title:before {
+      content: '「'; }
+    .product__content .title:after {
+      content: '」'; }
+  .product__content .info {
+    color: #666;
+    margin: 10px 0; }
+  .product__content .main {
+    margin: 20px 0;
+    line-height: 22px; }
+
+.product__next-unit {
+  height: 24px; }
+  .product__next-unit a.active {
+    color: #c88e50; }
+  .product__next-unit a:before {
+    content: '「'; }
+  .product__next-unit a:after {
+    content: '」'; }
 
 body {
   color: #333;

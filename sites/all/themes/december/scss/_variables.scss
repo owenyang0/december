@@ -7,3 +7,12 @@ $gold: #c88e50;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+@mixin title-quote() {
+  &:before {
+    content: '「';
+  }
+  &:after {
+    content: '」';
+  }
+}

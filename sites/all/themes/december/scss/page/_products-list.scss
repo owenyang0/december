@@ -1,0 +1,49 @@
+.product__detail--list {
+  @include cf();
+
+  .text {
+    padding-right: 1%;
+    width: 24%;
+    max-width: 180px;
+    float: left;
+    text-align: left;
+  }
+
+  .image {
+    width: 75%;
+    float: left;
+    height: 430px;
+  }
+}
+
+.product__content {
+  padding-bottom: 50px;
+
+  .title {
+    font-size: 24px;
+    margin-left: -13px;
+
+    @include title-quote();
+  }
+
+  .info {
+    color: #666;
+    margin: 10px 0;
+  }
+
+  .main {
+    margin: 20px 0;
+    line-height: 22px;
+  }
+}
+
+.product__next-unit {
+  height: 24px;
+
+  a {
+    &.active {
+      color: $gold;
+    }
+    @include title-quote()
+  }
+}
