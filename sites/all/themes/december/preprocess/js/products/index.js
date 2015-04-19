@@ -54,7 +54,7 @@ var App = React.createClass({
 
   render: function () {
     return (
-      <div className="commentBox">
+      <div className="product__detail--gallery">
         <Products data={this.state.currentData} />
         <ReactPaginate previousLabel={"previous"}
           nextLabel={"next"}
