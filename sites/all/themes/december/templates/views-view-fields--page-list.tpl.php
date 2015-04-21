@@ -44,6 +44,11 @@ $url = drupal_get_path_alias('node/' . $row->nid);
 preg_match("/src=\"(.*?)\"/", $image, $matches);
 $bg = $matches[1];
 
+preg_match("/<p>(.*?)<\/p>/", $info, $extras);
+$extra = $extras[1];
+
+$embed = get_field_value('field_video', $entity);
+$is_video = $entity->type == 'video_product';
 
 ?>
 
@@ -57,5 +62,12 @@ $bg = $matches[1];
       <a class="btn btn--more" href="<?php echo $url; ?>">MORE</a>
     </div>
   </div>
-  <div class="image" style="background-image:url('<?php echo $bg; ?>');"></div>
+  <div class="show">
+    <?php if ($is_video): ?>
+      <?php print $embed; ?>
+    <?php else: ?>
+      <div class="image" style="background-image:url('<?php echo $bg;
+      ?>');"></div>
+    <?php endif; ?>
+  </div>
 </div>
