@@ -13,6 +13,7 @@ scripts[] = js/jquery-1.11.2.js
 scripts[] = js/index.js
 
 regions[content] = Content
+regions[footer] = Footer
 
 ; Information added by Drupal.org packaging script on 2014-11-19
 version = "7.34"
