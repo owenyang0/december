@@ -15,6 +15,7 @@
 ?>
 
 <div class="product__detail product__detail--gallery">
+  <?php include_once("partials/product-control.tpl.inc"); ?>
   <?php foreach ($row_groups as $id => $group): ?>
     <li class="products__unit">
       <div class="products__unit--row-one"><?php print $group[0]; ?></div>

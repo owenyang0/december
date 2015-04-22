@@ -7,6 +7,7 @@ $results = $view->result;
 ?>
 
 <div class="product__detail">
+  <?php include_once("partials/product-control.tpl.inc"); ?>
   <?php foreach ($rows as $id => $row): ?>
     <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  }
       if ($id == 0) { print ' style="display: block;"';} ?>>

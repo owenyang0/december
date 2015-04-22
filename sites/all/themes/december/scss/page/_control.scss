@@ -1,0 +1,47 @@
+@mixin link-hover() {
+  background-color: $gold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.control {
+  line-height: 50px;
+  position: relative;
+  margin-bottom: 40px;
+
+  .link {
+    color: $gold;
+  }
+}
+
+.control__type--unit {
+  display: inline-block;
+
+  &.active,
+  &:hover {
+    .link {
+      @include link-hover();
+    }
+  }
+
+  .link {
+    padding: 10px 20px;
+  }
+}
+
+.control__switch {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  a {
+    display: inline-block;
+    padding: 10px;
+    line-height: 20px;
+  }
+
+  a.active,
+  a:hover {
+    @include link-hover();
+  }
+}

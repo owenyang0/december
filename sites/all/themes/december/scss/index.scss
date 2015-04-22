@@ -11,6 +11,7 @@
 @import "page/homepage";
 @import "page/product";
 @import "page/products-list";
+@import "page/control";
 
 body {
   color: #333;
@@ -34,3 +35,4 @@ a {
   content: ' ';
   display: table;
 }
+

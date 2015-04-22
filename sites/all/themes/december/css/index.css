@@ -215,6 +215,12 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
 .icon--close:before {
   content: '\e804'; }
 
+.icon--tile:before {
+  content: '\e805'; }
+
+.icon--list:before {
+  content: '\e806'; }
+
 .site-nav {
   background: black; }
   .site-nav .site-nav__logo--fix {
@@ -438,7 +444,7 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
     color: #fff; }
 
 .product__detail {
-  padding: 90px 150px 50px;
+  padding: 20px 150px 50px;
   text-align: center;
   font-size: 12px;
   max-width: 960px;
@@ -606,6 +612,35 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
 
 .views-row {
   display: none; }
+
+.control {
+  line-height: 50px;
+  position: relative;
+  margin-bottom: 40px; }
+  .control .link {
+    color: #c88e50; }
+
+.control__type--unit {
+  display: inline-block; }
+  .control__type--unit.active .link, .control__type--unit:hover .link {
+    background-color: #c88e50;
+    color: #fff;
+    text-decoration: none; }
+  .control__type--unit .link {
+    padding: 10px 20px; }
+
+.control__switch {
+  position: absolute;
+  right: 0;
+  top: 0; }
+  .control__switch a {
+    display: inline-block;
+    padding: 10px;
+    line-height: 20px; }
+  .control__switch a.active, .control__switch a:hover {
+    background-color: #c88e50;
+    color: #fff;
+    text-decoration: none; }
 
 body {
   color: #333;
