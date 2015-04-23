@@ -1,20 +1,32 @@
+<?php
+$absolute_path = $_GET['q'];
+$current_path = '/' . $absolute_path;
+
+$tid = $_GET['tid'];
+$full_path = $current_path . '?tid=';
+?>
+
 <div class="control">
   <ul class="control__type">
-    <li class="control__type--unit active">
-      <a class="link" href="#">婚礼</a>
+    <li class="control__type--unit <?php if($tid == 'All') echo ' active'; ?>">
+      <a class="link" href="<?php echo $full_path . 'All'; ?>">婚礼</a>
     </li>
-    <li class="control__type--unit">
-      <a class="link" href="#">求婚</a>
+    <li class="control__type--unit <?php if($tid == 1) echo ' active'; ?>">
+      <a class="link" href="<?php echo $full_path . '1'; ?>">求婚</a>
     </li>
-    <li class="control__type--unit">
-      <a class="link" href="#">活动</a>
+    <li class="control__type--unit <?php if($tid == 2) echo ' active'; ?>">
+      <a class="link" href="<?php echo $full_path . '2'; ?>">活动</a>
     </li>
-    <li class="control__type--unit">
-      <a class="link" href="#">视频</a>
+    <li class="control__type--unit <?php if($tid == 3) echo ' active'; ?>">
+      <a class="link" href="<?php echo $full_path . '3'; ?>">视频</a>
     </li>
   </ul>
-  <div class="control__switch">
-    <a class="control__switch--list link icon icon--list" href="#"></a>
-    <a class="control__switch--tile link icon icon--tile" href="#"></a>
-  </div>
+  <ul class="control__switch">
+    <li class="control__type--unit <?php if($absolute_path == 'products-list') echo ' active'; ?>">
+      <a class="control__switch--list link icon icon--list" href="/products-list?tid=All"></a>
+    </li>
+    <li class="control__type--unit <?php if($absolute_path == 'products-gallery') echo ' active'; ?>">
+      <a class="control__switch--tile link icon icon--tile" href="/products-gallery?tid=All"></a>
+    </li>
+  </ul>
 </div>

@@ -1,13 +1,8 @@
-<header class="product__header">
-  <?php include_once("partials/site-nav.tpl.inc"); ?>
-</header>
-
 <?php
 $results = $view->result;
 ?>
 
-<div class="product__detail">
-  <?php include_once("partials/product-control.tpl.inc"); ?>
+<div class="product__detail--list">
   <?php foreach ($rows as $id => $row): ?>
     <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  }
       if ($id == 0) { print ' style="display: block;"';} ?>>

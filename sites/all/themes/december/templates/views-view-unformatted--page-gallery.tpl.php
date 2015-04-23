@@ -1,7 +1,3 @@
-<header class="product__header">
-  <?php include_once("partials/site-nav.tpl.inc"); ?>
-</header>
-
 <?php
   $row_groups = array();
 
@@ -14,8 +10,7 @@
   }
 ?>
 
-<div class="product__detail product__detail--gallery">
-  <?php include_once("partials/product-control.tpl.inc"); ?>
+<div class="product__detail--gallery">
   <ul className="products">
     <?php foreach ($row_groups as $id => $group): ?>
       <li class="products__unit">
