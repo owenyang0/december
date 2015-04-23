@@ -444,7 +444,7 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
     color: #fff; }
 
 .product__detail {
-  padding: 20px 150px 50px;
+  padding: 40px 150px 50px;
   text-align: center;
   font-size: 12px;
   max-width: 960px;
@@ -614,7 +614,7 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
   display: none; }
 
 .control {
-  line-height: 50px;
+  line-height: 40px;
   position: relative;
   margin-bottom: 40px; }
   .control .link {
@@ -628,6 +628,8 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
     text-decoration: none; }
   .control__type--unit .link {
     padding: 10px 20px; }
+  .control__type--unit .link--switch {
+    padding: 5px 8px; }
 
 .control__switch {
   position: absolute;

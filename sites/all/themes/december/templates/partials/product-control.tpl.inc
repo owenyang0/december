@@ -23,10 +23,10 @@ $full_path = $current_path . '?tid=';
   </ul>
   <ul class="control__switch">
     <li class="control__type--unit <?php if($absolute_path == 'products-list') echo ' active'; ?>">
-      <a class="control__switch--list link icon icon--list" href="/products-list?tid=All"></a>
+      <a class="control__switch--list link link--switch icon icon--list" href="/products-list?tid=All"></a>
     </li>
     <li class="control__type--unit <?php if($absolute_path == 'products-gallery') echo ' active'; ?>">
-      <a class="control__switch--tile link icon icon--tile" href="/products-gallery?tid=All"></a>
+      <a class="control__switch--tile link link--switch icon icon--tile" href="/products-gallery?tid=All"></a>
     </li>
   </ul>
 </div>

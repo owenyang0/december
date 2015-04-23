@@ -5,7 +5,7 @@
 }
 
 .control {
-  line-height: 50px;
+  line-height: 40px;
   position: relative;
   margin-bottom: 40px;
 
@@ -26,6 +26,10 @@
 
   .link {
     padding: 10px 20px;
+  }
+
+  .link--switch {
+    padding: 5px 8px;
   }
 }
 
