@@ -58,3 +58,13 @@
   }
 
 }
+
+.item-list {
+  width: 100%;
+}
+
+.product__detail--list {
+  .item-list .pager {
+    text-align: left;
+  }
+}

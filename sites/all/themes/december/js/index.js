@@ -40,7 +40,7 @@
 
       // TODO: temp
       $next.appendTo($('.' + className + ' .text'));
-      $listPager.appendTo($('.' + className + ' .text'));
+      //$listPager.appendTo($('.' + className + ' .text'));
 
       console.log($(this).attr('for'));
     });
@@ -51,7 +51,7 @@
 
     var $listPager = $('.product__detail--list').siblings('.item-list');
     if ($listPager.has('.pager')) {
-      $listPager.appendTo($('.views-row-1 .text'));
+      $listPager.appendTo($('.product__detail--list'));
     }
   });
 })(jQuery);

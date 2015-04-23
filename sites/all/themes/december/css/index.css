@@ -656,6 +656,12 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
   .item-list .pager li {
     margin: 0; }
 
+.item-list {
+  width: 100%; }
+
+.product__detail--list .item-list .pager {
+  text-align: left; }
+
 body {
   color: #333;
   font-family: Times, "Microsoft Yahei", STHeiti, sans-serif; }
