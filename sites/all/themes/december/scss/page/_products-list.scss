@@ -1,4 +1,6 @@
 .product__detail--list {
+  position: relative;
+
   @include cf();
 
   .text {
@@ -16,12 +18,17 @@
     .image,
     embed {
       width: 100%;
-      height: 450px;
+      height: 430px;
     }
 
     .image {
       @include bg-img();
     }
+  }
+
+  .item-list {
+    position: absolute;
+    bottom: 0;
   }
 }
 

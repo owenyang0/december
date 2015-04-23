@@ -49,3 +49,12 @@
     @include link-hover();
   }
 }
+
+.item-list .pager {
+  margin-bottom: 0;
+
+  li {
+    margin: 0;
+  }
+
+}

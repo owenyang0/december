@@ -14,12 +14,6 @@
     </div>
   <?php endif; ?>
 
-  <?php if ($exposed): ?>
-    <div class="view-filters">
-      <?php print $exposed; ?>
-    </div>
-  <?php endif; ?>
-
   <?php if ($attachment_before): ?>
     <div class="attachment attachment-before">
       <?php print $attachment_before; ?>
@@ -34,12 +28,12 @@
     <div class="product__detail">
       <?php include_once("partials/product-control.tpl.inc"); ?>
       <?php print $rows; ?>
+
+      <?php if ($pager): ?>
+        <?php print $pager; ?>
+      <?php endif; ?>
     </div>
   </div>
-
-  <?php if ($pager): ?>
-    <?php print $pager; ?>
-  <?php endif; ?>
 
   <?php if ($attachment_after): ?>
     <div class="attachment attachment-after">

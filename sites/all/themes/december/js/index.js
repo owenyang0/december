@@ -38,14 +38,20 @@
       $('.' + activeClassName).hide();
       $('.' + className).fadeIn();
 
-      // TODO: test
+      // TODO: temp
       $next.appendTo($('.' + className + ' .text'));
+      $listPager.appendTo($('.' + className + ' .text'));
 
       console.log($(this).attr('for'));
     });
 
-    // TODO: test
+    // TODO: temp
     var $next = $('.product__next');
     $next.appendTo($('.views-row-1 .text'));
+
+    var $listPager = $('.product__detail--list').siblings('.item-list');
+    if ($listPager.has('.pager')) {
+      $listPager.appendTo($('.views-row-1 .text'));
+    }
   });
 })(jQuery);
