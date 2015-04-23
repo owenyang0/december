@@ -68,7 +68,7 @@ $is_video = $entity->type == 'video_product';
     <?php endif; ?>
   </div>
   <div class="desc">
-    <h1 class="desc__title"><?php echo $title; ?></h1>
+    <a href="<?php echo $url; ?>" class="desc__title"><?php echo $title; ?></a>
     <div class="desc__info"><?php echo $extra; ?></div>
   </div>
 </div>
