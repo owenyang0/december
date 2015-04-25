@@ -784,7 +784,17 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
 
 .services__hero--ring {
   background-image: url('/images/hero.png');
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.services__hero--footer {
+  background-image: url('/images/product_1.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .container {
   max-width: 1020px;

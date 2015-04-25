@@ -98,6 +98,13 @@
 .services__hero--ring {
   background-image: url('/images/hero.png');
   background-attachment: fixed;
+  @include bg-img();
+}
+
+.services__hero--footer {
+  background-image: url('/images/product_1.png');
+  background-attachment: fixed;
+  @include bg-img();
 }
 
 .container {
