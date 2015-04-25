@@ -782,6 +782,35 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
   font-size: 11px;
   text-align: left; }
 
+.services__hero--ring {
+  background-image: url('/images/hero.png');
+  background-attachment: fixed; }
+
+.container {
+  max-width: 1020px;
+  margin: 0 auto; }
+
+.quote {
+  width: 33%;
+  margin: 0 auto;
+  padding: 150px 0; }
+
+.quote__text {
+  line-height: 26px; }
+  .quote__text p:first-child:before {
+    content: '「'; }
+  .quote__text p:last-child:after {
+    content: '」'; }
+  .quote__text .row-two {
+    padding-left: 100px; }
+  .quote__text .row-three {
+    padding-left: 60px; }
+
+.quote__sign {
+  margin-top: 40px;
+  padding-right: 20px;
+  text-align: right; }
+
 body {
   color: #333;
   font-family: Times, "Microsoft Yahei", STHeiti, sans-serif; }
