@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var del = require('del');
+var connect = require('gulp-connect');
 
 var config = {
   sass: {
@@ -30,10 +31,23 @@ gulp.task('sass', function(){
 
 gulp.task('watch', function(){
   gulp.watch(config.sass.path + '**/*' + config.sass.extension, ['sass']);
+  gulp.watch(['./pages/*.html'], ['html']);
 });
 
 gulp.task('build', ['clean'], function(){
   gulp.start(['sass']);
 });
 
-gulp.task('default', ['watch', 'build']);
+gulp.task('default', ['build', 'connect', 'watch']);
+
+gulp.task('connect', function() {
+  connect.server({
+    root: './',
+    livereload: true
+  });
+});
+
+gulp.task('html', function () {
+  gulp.src('./pages/*.html')
+    .pipe(connect.reload());
+});
