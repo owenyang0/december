@@ -42,7 +42,7 @@ gulp.task('default', ['build', 'connect', 'watch']);
 
 gulp.task('connect', function() {
   connect.server({
-    root: './',
+    root: __dirname,
     livereload: true
   });
 });

@@ -31,3 +31,39 @@
     font-size: 11px;
   }
 }
+
+.delicate {
+  @include cf();
+}
+
+.delicate__unit {
+  @include col(1/6);
+  height: 130px;
+
+  @include bg-img();
+  background-size: contain;
+
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      background-image: url('/images/services/2.1-#{$i}.png');
+    }
+
+  }
+}
+
+.delicate__text {
+  padding-top: 32%;
+  color: #fff;
+}
+
+.delicate__text--dash {
+  display: block;
+  width: 10px;
+  height: 1px;
+  background-color: #fff;
+  margin: 0 auto 20px;
+}
+
+.services__hero--ring {
+
+}

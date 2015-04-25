@@ -689,6 +689,58 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
     padding: 10px 0;
     font-size: 11px; }
 
+.delicate {
+  *zoom: 1; }
+  .delicate:before, .delicate:after {
+    content: '';
+    display: table; }
+  .delicate:after {
+    clear: both; }
+
+.delicate__unit {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 14.16667%;
+  margin-left: 0%;
+  margin-right: 3%;
+  height: 130px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  .delicate__unit:before, .delicate__unit:after {
+    content: '';
+    display: table; }
+  .delicate__unit:after {
+    clear: both; }
+  .delicate__unit:last-child {
+    margin-right: 0%; }
+  .delicate__unit:nth-child(1) {
+    background-image: url('/images/services/2.1-1.png'); }
+  .delicate__unit:nth-child(2) {
+    background-image: url('/images/services/2.1-2.png'); }
+  .delicate__unit:nth-child(3) {
+    background-image: url('/images/services/2.1-3.png'); }
+  .delicate__unit:nth-child(4) {
+    background-image: url('/images/services/2.1-4.png'); }
+  .delicate__unit:nth-child(5) {
+    background-image: url('/images/services/2.1-5.png'); }
+  .delicate__unit:nth-child(6) {
+    background-image: url('/images/services/2.1-6.png'); }
+
+.delicate__text {
+  padding-top: 32%;
+  color: #fff; }
+
+.delicate__text--dash {
+  display: block;
+  width: 10px;
+  height: 1px;
+  background-color: #fff;
+  margin: 0 auto 20px; }
+
 body {
   color: #333;
   font-family: Times, "Microsoft Yahei", STHeiti, sans-serif; }
