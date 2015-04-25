@@ -30,7 +30,7 @@ gulp.task('sass', function(){
 });
 
 gulp.task('watch', function(){
-  gulp.watch(config.sass.path + '**/*' + config.sass.extension, ['sass']);
+  gulp.watch(config.sass.path + '**/*' + config.sass.extension, ['sass', 'html']);
   gulp.watch(['./pages/*.html'], ['html']);
 });
 
