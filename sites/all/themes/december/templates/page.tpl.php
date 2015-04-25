@@ -1,4 +1,3 @@
-<div class="react-section"></div>
 <div class="december">
   <div class="december__content">
     <?php echo render($page['content']); ?>
