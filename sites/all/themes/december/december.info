@@ -12,6 +12,7 @@ scripts[] = js/jquery-1.11.2.js
 ; scripts[] = js/libs/ramda.min.js
 scripts[] = js/index.js
 
+regions[head] = Head
 regions[content] = Content
 regions[footer] = Footer
 

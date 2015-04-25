@@ -45,7 +45,8 @@
 
   @for $i from 1 through 6 {
     &:nth-child(#{$i}) {
-      background-image: url('/sites/all/themes/december/images/services/2.1-#{$i}.png');
+//      background-image: url('/sites/all/themes/december/images/services/2.1-#{$i}.png');
+      background-image: url('/images/services/2.1-#{$i}.png');
     }
 
   }
