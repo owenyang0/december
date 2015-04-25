@@ -662,6 +662,33 @@ button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="su
 .product__detail--list .item-list .pager {
   text-align: left; }
 
+.slogan {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center; }
+
+.slogan__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #c88e50;
+  position: relative; }
+  .slogan__title:after {
+    content: ' ';
+    border-bottom: 2px solid;
+    display: block;
+    position: absolute;
+    min-width: 20px;
+    left: 49%;
+    right: 49%;
+    padding-top: 20px; }
+
+.slogan__intro {
+  margin: 30px 0; }
+  .slogan__intro p {
+    padding: 10px 0;
+    font-size: 11px; }
+
 body {
   color: #333;
   font-family: Times, "Microsoft Yahei", STHeiti, sans-serif; }

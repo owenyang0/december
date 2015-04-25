@@ -1,0 +1,33 @@
+.slogan {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.slogan__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: $gold;
+  position: relative;
+
+  &:after {
+    content: ' ';
+    border-bottom: 2px solid;
+    display: block;
+    position: absolute;
+    min-width: 20px;
+    left: 49%;
+    right: 49%;
+    padding-top: 20px;
+  }
+}
+
+.slogan__intro {
+  margin: 30px 0;
+
+  p {
+    padding: 10px 0;
+    font-size: 11px;
+  }
+}
