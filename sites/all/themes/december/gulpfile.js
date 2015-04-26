@@ -9,6 +9,7 @@ var config = {
     extension: '.scss',
     options: {
       errLogToConsole: true,
+      outputStyle: 'compressed',
       includePaths: [
         'node_modules/jeet/scss/'
       ]
