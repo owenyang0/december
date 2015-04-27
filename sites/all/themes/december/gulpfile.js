@@ -5,7 +5,7 @@ var connect = require('gulp-connect');
 
 var config = {
   sass: {
-    path: 'scss/',
+    path: 'preprocess/scss/',
     extension: '.scss',
     options: {
       errLogToConsole: true,
