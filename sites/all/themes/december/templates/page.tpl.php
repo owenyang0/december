@@ -1,4 +1,5 @@
 <div class="december">
+  <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
 
   <?php if ($page['head']): ?>
     <div class="december__head">
