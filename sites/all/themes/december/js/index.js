@@ -53,5 +53,24 @@
     if ($listPager.has('.pager')) {
       $listPager.appendTo($('.product__detail--list'));
     }
+
+    var map = $('.contact__content-map .map');
+    map.hover(function() {
+      $(this).animate({
+        'width': '300px',
+        'height': '300px'
+      }, 200);
+    }, function() {
+      $(this).animate({
+        'width': '280px',
+        'height': '280px'
+      }, 200);
+    });
+
+    $('.contact__content-media .icon').hover(function() {
+      $(this).next('.desc').fadeIn();
+    }, function() {
+      $(this).next('.desc').fadeOut();
+    });
   });
 })(jQuery);

@@ -1,0 +1,82 @@
+.contact {
+  position: relative;
+  text-align: center;
+}
+.contact__hero {
+  height: 670px;
+}
+.contact__mask {
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.contact__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.contact__content-media {
+  position: absolute;
+  bottom: 80px;
+  text-align: center;
+  width: 100%;
+
+  li {
+    width: 15%;
+    height: 40px;
+    position: relative;
+  }
+
+  .icon {
+    color: #fff;
+    background-color: $gold;
+    border-radius: 50%;
+    // position: absolute;
+
+    &:hover {
+      font-size: 28px;
+    }
+  }
+
+  .desc {
+    position: absolute;
+    display: none;
+    width: 100%;
+    color: #fff;
+    font-size: 13px;
+    // margin-top: 10px;
+    bottom: -30px;
+  }
+}
+.contact__content-map {
+  margin-top: 90px;
+
+  .map {
+    width: 280px;
+    height: 280px;
+
+    &:hover {
+      & + .local {
+        display: block;
+      }
+    }
+  }
+
+  .local {
+    display: none;
+    font-size: 13px;
+    line-height: 20px;
+    color: #fff;
+    margin-top: 30px;
+  }
+  // &:hover {
+  //   cursor: pointer;
+  // }
+}
