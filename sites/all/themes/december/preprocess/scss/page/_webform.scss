@@ -1,0 +1,161 @@
+.block-webform {
+  padding: 60px 150px 50px;
+  text-align: center;
+  font-size: 12px;
+  max-width: 1004px;
+  margin: 0 auto;
+  width: 60%;
+
+  & > h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: $gold;
+    padding-bottom: 30px;
+
+    @include title-line();
+  }
+}
+
+.form-item {
+  margin-top: 10px;
+  position: relative;
+  width: 100%;
+
+  input[type="text"], textarea {
+    width: 100%;
+  }
+
+  &.col-2 {
+    @include col(1/2, $cycle: 2);
+
+    &:last-child {
+      @include cf();
+    }
+  }
+
+//  select {
+//    -webkit-appearance: none;
+//    border: 0;
+//    border-radius: 0;
+//    padding: 10px;
+//    background-color: #fff;
+////    border-bottom: 1px solid #757575;
+//  }
+//
+//  .webform-datepicker {
+//    padding: 0px 10px 3px 0px;
+//
+//    .webform-calendar {
+//      display: none;
+//    }
+//  }
+}
+
+//.webform-component--row-2--wedding-day {
+//  border-bottom: 1px solid $gold;
+//
+//  .form-type-select {
+//    width: 30%;
+////    display: block;
+////    float: left;
+//    padding-left: 50px;
+//  }
+//}
+
+.form-actions {
+  margin-top: 50px;
+}
+
+.webform-submit {
+  @extend .btn;
+
+  background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// material design
+
+input:focus {
+  outline: none;
+}
+
+label {
+  font-size: 14px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 20px;
+  transition: all 0.2s ease;
+}
+
+input {
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 10px 10px 5px;
+  -webkit-appearance: none;
+  display: block;
+  color: $gold;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #757575;
+
+  &:focus {
+    border-bottom: 1px solid transparent;
+  }
+
+  &.used {
+    border-bottom: 1px solid $gold;
+  }
+}
+
+input[type='image'],
+input[type='submit'] {
+  width: auto;
+
+  &.used {
+    border-bottom: 1px solid #757575;
+  }
+}
+
+input:focus ~ label, input.used ~ label {
+  display: none;
+}
+
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.bar:before, .bar:after {
+  content: '';
+  height: 1px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background-color: $gold;
+  transition: all 0.2s ease;
+}
+
+.bar:before { left: 50%; }
+
+.bar:after { right: 50%; }
+
+
+input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
+

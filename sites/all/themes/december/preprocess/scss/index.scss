@@ -16,6 +16,8 @@
 @import "page/galleries";
 @import "page/contact";
 
+@import "page/webform";
+
 body {
   color: #333;
   font-family: Times, "Microsoft Yahei", STHeiti, sans-serif;
@@ -39,3 +41,6 @@ a {
   display: table;
 }
 
+* {
+  box-sizing:border-box;
+}

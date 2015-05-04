@@ -72,5 +72,21 @@
     }, function() {
       $(this).next('.desc').fadeOut();
     });
+
+    var bar = $('<span class="bar"></span>');
+    var formItem = $('.form-item');
+    formItem.find('input').after(bar);
+
+    formItem.each(function() {
+      $(this).find('input').after($(this).children('label'));
+    });
+
+    $('input').blur(function() {
+      var $this = $(this);
+      if ($this.val())
+        $this.addClass('used');
+      else
+        $this.removeClass('used');
+    });
   });
 })(jQuery);

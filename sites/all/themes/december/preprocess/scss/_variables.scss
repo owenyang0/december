@@ -16,3 +16,16 @@ $gold: #c88e50;
     content: '」';
   }
 }
+
+@mixin title-line {
+  &:after {
+    content: ' ';
+    border-bottom: 1px solid;
+    display: block;
+    position: absolute;
+    min-width: 20px;
+    left: 49%;
+    right: 49%;
+    padding-top: 20px;
+  }
+}
