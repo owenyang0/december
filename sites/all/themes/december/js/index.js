@@ -1,7 +1,7 @@
 (function($){
   $(function(){
-    $('[data-lightbox]').click(function(e){
-      $(this).siblings('.lightbox').addClass('active');
+    $('[data-lightbox-dec]').click(function(e){
+      $(this).siblings('.lightbox-dec').addClass('active');
       e.preventDefault();
     });
 
