@@ -4,6 +4,7 @@
 }
 .contact__hero {
   height: 670px;
+  @include bg-img();
 }
 .contact__mask {
 

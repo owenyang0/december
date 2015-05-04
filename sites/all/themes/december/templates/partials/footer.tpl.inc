@@ -4,8 +4,8 @@
   <ul class="social-media">
     <li><a class="icon icon--qq" href="#"></a></li>
     <li>
-      <a class="icon icon--wechat" data-lightbox href="/wechat"></a>
-      <div class="lightbox lightbox--wechat">
+      <a class="icon icon--wechat" data-lightbox-dec href="/wechat"></a>
+      <div class="lightbox-dec lightbox--wechat">
         <a class="lightbox__close" href="#">&times;</a>
         <h1 class="lightbox__title">Follow Us</h1>
         <div class="lightbox__intro">
