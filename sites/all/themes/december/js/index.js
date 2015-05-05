@@ -73,20 +73,58 @@
       $(this).next('.desc').fadeOut();
     });
 
-    var bar = $('<span class="bar"></span>');
-    var formItem = $('.form-item');
-    formItem.find('input').after(bar);
 
-    formItem.each(function() {
+
+
+
+
+
+
+    var $bar = $('<span class="bar"></span>');
+    var $error = $('<div class="validate-error">无法提交，请确认以上内容是否填写正确</div>');
+    var $formItem = $('.form-item');
+    var fields = $('input').not('input[type="submit"]').not('input[type="hidden"]');
+    var $form = $formItem.find('input');
+
+    var fieldError = {
+      'field-name': '请填写名字',
+      'field-email': '请填写邮箱',
+      'field-tel': '请填写电话号码',
+      'field-wedday': '请填写婚期',
+      'field-address': '请填写婚礼地址',
+      'field-consult': '请填写留言'
+    };
+
+    //$('.webform-client-form').attr('novalidate', '');
+    $form.after($bar);
+
+
+    //if ($formItem.find('input.error').length != 0) {
+    //  $('.form-actions').before($error);
+    //}
+
+    $formItem.each(function() {
       $(this).find('input').after($(this).children('label'));
     });
 
-    $('input').blur(function() {
-      var $this = $(this);
-      if ($this.val())
-        $this.addClass('used');
-      else
-        $this.removeClass('used');
+    fields.blur(function() {
+      checkUsed($(this));
     });
+
+    //function getClass(self) {
+    //  var classes = self.attr('class');
+    //
+    //  return classes && classes.match(/field-\w*/) && classes.match(/field-\w*/)[0];
+    //}
+
+    function checkUsed(self) {
+
+      if (self.val()) {
+        self.removeClass('error');
+        self.addClass('used');
+      } else {
+        self.removeClass('used');
+      }
+    }
   });
 })(jQuery);
