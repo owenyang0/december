@@ -39,10 +39,18 @@
     color: #fff;
     background-color: $gold;
     border-radius: 50%;
+    font-size: 0;
     // position: absolute;
 
+    &:before {
+      font-size: 20px;
+      transition: 0.2s ease-in;
+    }
+
     &:hover {
-      font-size: 28px;
+      &:before {
+        font-size: 28px;
+      }
     }
   }
 
@@ -51,7 +59,7 @@
     display: none;
     width: 100%;
     color: #fff;
-    font-size: 13px;
+    font-size: 11px;
     // margin-top: 10px;
     bottom: -30px;
   }
