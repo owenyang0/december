@@ -5,6 +5,7 @@ version = VERSION
 core = 7.x
 
 stylesheets[screen][] = css/index.css
+stylesheets[screen][] = css/lightbox.css
 
 scripts[] = js/jquery-1.11.2.js
 scripts[] = js/lightbox.js

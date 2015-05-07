@@ -30,6 +30,10 @@
     position: absolute;
     bottom: 0;
   }
+
+  .views-row {
+    display: none;
+  }
 }
 
 .product__content {
@@ -66,8 +70,4 @@
     }
     @include title-quote()
   }
-}
-
-.views-row {
-  display: none;
 }
