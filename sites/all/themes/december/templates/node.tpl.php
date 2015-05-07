@@ -89,7 +89,13 @@
 
 
   <div class="content"<?php print $content_attributes; ?>>
-    <?php echo $node->body['und']['0']['value']; ?>
+    <?php //echo $node->body['und']['0']['value']; ?>
+    <?php
+    // We hide the comments and links now so that we can render them later.
+    hide($content['comments']);
+    hide($content['links']);
+    print render($content);
+    ?>
   </div>
 
 </div>

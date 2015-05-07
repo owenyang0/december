@@ -104,11 +104,6 @@
   }
 }
 
-.container {
-  max-width: 1020px;
-  margin: 0 auto;
-}
-
 .quote {
   width: 50%;
   margin: 0 auto;
@@ -145,4 +140,11 @@
   margin-top: 30px;
   padding-right: 20px;
   text-align: right;
+}
+
+.container--service-top {
+  padding-top: 40px;
+}
+.container--service-content {
+  padding-bottom: 50px;
 }

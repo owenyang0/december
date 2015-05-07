@@ -13,7 +13,7 @@
 
   <?php if ($page['footer']): ?>
     <div class="december__footer">
-      <?php include_once("partials/footer.tpl.inc"); ?>
+      <?php print render($page['footer']); ?>
     </div>
   <?php endif; ?>
 </div>

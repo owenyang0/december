@@ -1,4 +1,4 @@
-<footer class="footer">
+<div class="footer">
   <p>&copy; 2014 December Wedding</p>
   <p>All rights reserved</p>
   <ul class="social-media">
@@ -19,4 +19,4 @@
   <div class="footer__to-top">
     <a class="icon icon--up-arrow" href="#"></a>
   </div>
-</footer>
+</div>

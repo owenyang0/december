@@ -8,6 +8,7 @@
 @import "partial/button";
 @import "partial/footer";
 
+@import "page/page";
 @import "page/homepage";
 @import "page/product";
 @import "page/products-list";
@@ -43,4 +44,8 @@ a {
 
 * {
   box-sizing:border-box;
+}
+
+.clearfix:after {
+  content: '';
 }
