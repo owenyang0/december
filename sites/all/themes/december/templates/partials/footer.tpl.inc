@@ -14,7 +14,7 @@
         <img class="lightbox__img" src="/sites/all/themes/december/images/wechat_qr.png"/>
       </div>
     </li>
-    <li><a class="icon icon--weibo" href="#"></a></li>
+    <li><a class="icon icon--weibo" href="http://weibo.com/decemberwedding12"></a></li>
   </ul>
   <div class="footer__to-top">
     <a class="icon icon--up-arrow" href="#"></a>
