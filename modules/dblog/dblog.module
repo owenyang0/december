@@ -152,7 +152,7 @@ function dblog_watchdog(array $log_entry) {
       'variables' => serialize($log_entry['variables']),
       'severity' => $log_entry['severity'],
       'link' => substr($log_entry['link'], 0, 255),
-      'location' => $log_entry['request_uri'],
+      'location' => urlencode($log_entry['request_uri']),
       'referer' => $log_entry['referer'],
       'hostname' => substr($log_entry['ip'], 0, 128),
       'timestamp' => $log_entry['timestamp'],
