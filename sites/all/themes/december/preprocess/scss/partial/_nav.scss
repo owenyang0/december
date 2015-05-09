@@ -1,3 +1,85 @@
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes $animation-name {
+    @content;
+  }
+  @-moz-keyframes $animation-name {
+    @content;
+  }
+  @keyframes $animation-name {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+@include keyframes(hover-in) {
+  0% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0)
+  }
+
+  100% {
+    -webkit-transform: translateY(-110px);
+    -ms-transform: translateY(-110px);
+    -o-transform: translateY(-110px);
+    transform: translateY(-110px)
+  }
+}
+
+@include keyframes(hover-in-small) {
+  0% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0)
+  }
+
+  100% {
+    -webkit-transform: translateY(-40px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    transform: translateY(-40px)
+  }
+}
+
+@include keyframes(hover-out) {
+  0% {
+    -webkit-transform: translateY(-110px);
+    -ms-transform: translateY(-110px);
+    -o-transform: translateY(-110px);
+    transform: translateY(-110px)
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0)
+  }
+}
+
+@include keyframes(hover-out-small) {
+  0% {
+    -webkit-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    -o-transform: translateY(-40px);
+    transform: translateY(-40px)
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0)
+  }
+}
+
 .site-nav {
   background: black;
 
@@ -17,11 +99,38 @@
     .site-nav__logo--fix {
       display: inline-block;
     }
+
+    .site-nav__item {
+      &.active {
+        a div span {
+          border-color: $gold;
+          -webkit-animation: none;
+          -moz-animation: none;
+          -o-animation: none;
+          animation: none;
+        }
+      }
+      a {
+        span {
+          @include animation('hover-out-small 0.25s forwards');
+        }
+
+        &:hover {
+          span {
+            @include animation('hover-in-small 0.25s forwards');
+          }
+        }
+        div {
+          height: 50px;
+          line-height: 30px;
+        }
+      }
+    }
   }
 }
 .site-nav__list {
   text-align: center;
-  padding: 20px;
+
   li {
     display: inline-block;
     vertical-align: middle;
@@ -30,8 +139,46 @@
   a {
     color: $gold;
   }
+
+  .site-nav__item.active {
+    a span {
+      border-color: $gold;
+      -webkit-animation: none;
+      -moz-animation: none;
+      -o-animation: none;
+      animation: none;
+    }
+  }
 }
 
 .site-nav__logo img {
   width: 60px;
+}
+
+.site-nav__item a {
+  div {
+    height: 120px;
+    line-height: 100px;
+    overflow: hidden;
+    padding: 10px 0;
+    position: relative;
+
+    span {
+      border-bottom: 4px solid transparent;
+      padding: 0px 5px 6px;
+      position: relative;
+      display: block;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform-style: preserve-3d;
+      -moz-backface-visibility: hidden;
+
+      @include animation('hover-out 0.25s forwards');
+    }
+  }
+
+  &:hover {
+    span {
+      @include animation('hover-in 0.25s forwards');
+    }
+  }
 }
