@@ -1,6 +1,11 @@
+<?php
+$absolute_path = $_GET['q'];
+?>
+
+
 <nav class="site-nav">
   <ul class="site-nav__list">
-    <li class="site-nav__item">
+    <li class="site-nav__item<?php if ($absolute_path == 'products-list' || $absolute_path == 'products-gallery') echo ' active'; ?>">
       <a href="/products-list?tid=All">
         <div>
           <span>WORK</span>
@@ -8,7 +13,7 @@
         </div>
       </a>
     </li>
-    <li class="site-nav__item active"><a href="/service-process">
+    <li class="site-nav__item<?php if ($absolute_path == 'service-process') echo ' active'; ?>"><a href="/service-process">
         <div>
           <span>SERVICE</span>
           <span>服务流程</span>
@@ -21,14 +26,16 @@
     <li class="site-nav__logo--fix">
       <img src="/sites/all/themes/december/images/logo_small.png">
     </li>
-    <li class="site-nav__item"><a href="/about">
+    <li class="site-nav__item<?php if ($absolute_path == 'about') echo ' active'; ?>">
+      <a href="/about">
         <div>
           <span>ABOUT</span>
           <span>关于我们</span>
         </div>
       </a>
     </li>
-    <li class="site-nav__item"><a href="/contact-us">
+    <li class="site-nav__item<?php if ($absolute_path == 'contact-us') echo ' active'; ?>">
+      <a href="/contact-us">
         <div>
           <span>CONTACT</span>
           <span>联系我们</span>
