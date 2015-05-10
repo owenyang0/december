@@ -43,19 +43,6 @@
         <a href="#">查看所有作品 ></a>
       </section>
     </div>
-    <div class="homepage__sub-hero">
-    </div>
-    <div class="homepage__service">
-      <h1 class="homepage__title">Service</h1>
-      <div class="homepage__intro">
-        <p>「拾贰记」坚持创意、精细、服务、惊喜的设计理念</p>
-        <p>秉承服务至上的原则，为客户提供人性化的高质量服务，服务包括：</p>
-        <p>高端婚礼定制｜创意求婚策划｜活动宴会策划</p>
-      </div>
-      <a class="btn" href="#">查看服务</a>
-    </div>
+    <div class="homepage__sub-hero">&nbsp;</div>
   </div>
-
-  <?php include_once("partials/footer.tpl.inc"); ?>
-
 </div>

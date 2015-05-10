@@ -2,9 +2,9 @@
   <p>&copy; 2014 December Wedding</p>
   <p>All rights reserved</p>
   <ul class="social-media">
-    <li><a class="icon icon--qq" href="#"></a></li>
+    <li><a class="icon icon--qq" href="#">&nbsp;</a></li>
     <li>
-      <a class="icon icon--wechat" data-lightbox-dec href="/wechat"></a>
+      <a class="icon icon--wechat" data-lightbox-dec href="/wechat">&nbsp;</a>
       <div class="lightbox-dec lightbox--wechat">
         <a class="lightbox__close" href="#">&times;</a>
         <h1 class="lightbox__title">Follow Us</h1>
@@ -14,9 +14,9 @@
         <img class="lightbox__img" src="/sites/all/themes/december/images/wechat_qr.png"/>
       </div>
     </li>
-    <li><a class="icon icon--weibo" href="http://weibo.com/decemberwedding12"></a></li>
+    <li><a class="icon icon--weibo" href="http://weibo.com/decemberwedding12">&nbsp;</a></li>
   </ul>
   <div class="footer__to-top">
-    <a class="icon icon--up-arrow" href="#"></a>
+    <a class="icon icon--up-arrow" href="#">&nbsp;</a>
   </div>
 </div>
