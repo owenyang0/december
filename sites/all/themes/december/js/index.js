@@ -126,5 +126,23 @@
         self.removeClass('used');
       }
     }
+
+
+
+    // url active
+    $nav = $('#block-block-1 .site-nav');
+    if ($nav.length) {
+      var pathname = $(location)[0].pathname;
+
+      var urlMap = {
+        '/products-list': '.site-nav__item--prod',
+        '/products-gallery': '.site-nav__item--prod',
+        '/service-process': '.site-nav__item--service',
+        '/about': '.site-nav__item--about',
+        '/contact-us': '.site-nav__item--contact'
+      };
+
+      urlMap[pathname] && $(urlMap[pathname]).addClass('active');
+    }
   });
 })(jQuery);
