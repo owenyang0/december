@@ -40,7 +40,7 @@ function _select_related_table($original_node, $count = 3, $is_start = FALSE) {
       ->fields('n', array('nid', 'type'))
       ->condition('n.type', array(
         'photo_product',
-//        'video_product'
+        'video_product'
       ), 'IN')
       ->condition('n.status', 1, '=')
       ->orderBy('created', 'DESC')
@@ -52,7 +52,7 @@ function _select_related_table($original_node, $count = 3, $is_start = FALSE) {
       ->fields('n', array('nid', 'type'))
       ->condition('n.type', array(
         'photo_product',
-//        'video_product'
+        'video_product'
       ), 'IN')
       ->condition('n.status', 1, '=')
       ->condition('n.created', $original_node->created, '<')

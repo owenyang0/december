@@ -9,7 +9,12 @@
   <h2 class="related__title">类似作品</h2>
   <ul class="related__list row">
     <?php foreach ($infos as $info): ?>
-      <li class="related__item" style="background-image: url('<?php echo $info['background']; ?>');">
+      <li class="related__item"">
+        <?php if ($info['is_video']): ?>
+          <?php print $info['background']; ?>
+        <?php else: ?>
+          <div class="related__item-image" style="background-image:url('<?php echo $info['background']; ?>');"></div>
+        <?php endif; ?>
         <div class="related__item-info">
           <h2 class="related__item-title"><?php echo $info['title']; ?></h2>
           <p class="related__item-date-place"><?php echo $info['extrainfo']; ?></p>
