@@ -146,8 +146,6 @@
 
 
     // parallax
-    //var $footer = $('.services__hero--footer');
-
     var $ring = $('.services__hero--ring');
     var posYOrig = -40;
     $ring.css('background-position', '50% ' + posYOrig + 'px');
