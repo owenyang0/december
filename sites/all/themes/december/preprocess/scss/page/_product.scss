@@ -50,28 +50,6 @@
   }
 }
 
-.related {
-  padding: 50px 150px;
-  text-align: center;
-}
-
-.related__title {
-  font-size: 20px;
-  margin: 0 0 20px;
-}
-
-.related__item {
-  float: left;
-  width: 31%;
-  height: 400px;
-  margin-right: 2%;
-  @include bg-img();
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
 .products__unit {
   margin-bottom: 50px;
   list-style: none;
