@@ -40,7 +40,7 @@
             </div>
           </div>
         </div>
-        <a href="#">查看所有作品 ></a>
+        <a href="/products-list?tid=All">查看所有作品 ></a>
       </section>
     </div>
     <div class="homepage__sub-hero">&nbsp;</div>

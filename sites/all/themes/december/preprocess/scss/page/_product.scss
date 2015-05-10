@@ -59,9 +59,17 @@
   }
 
   .background {
+    overflow: hidden;
+
     .img, embed {
       height: 350px;
       width: 100%;
+      transition: all 3s ease-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
     }
 
     .img {
