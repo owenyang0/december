@@ -8,6 +8,7 @@
 @import "partial/button";
 @import "partial/footer";
 @import "partial/related";
+@import "partial/dataurl";
 
 @import "page/page";
 @import "page/homepage";
@@ -50,3 +51,4 @@ a {
 .clearfix:after {
   content: '';
 }
+
