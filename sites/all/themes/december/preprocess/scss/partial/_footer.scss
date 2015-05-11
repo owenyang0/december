@@ -47,6 +47,7 @@
   &.active {
     opacity: 1;
     visibility: visible;
+    z-index: 10;
   }
 }
 
@@ -54,8 +55,14 @@
   position: absolute;
   right: 30px;
   top: 100px;
-  color: $gold;
-  font-size: 80px;
+  height: 30px;
+  width: 30px;
+
+  background: url(../images/close.png) top right no-repeat;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .lightbox__intro {
