@@ -36,15 +36,8 @@ if (!function_exists('get_field_value')) {
   }
 }
 
-if (!isset ($view->rendered_idx)) {
-  $view->rendered_idx = 0;
-}
-
-$view->rendered_idx++;
-
 $title = $entity->title;
 $info = get_field_value('field_information', $entity);
-$main = get_field_value('field_main_text', $entity);
 $image = get_field_value('field_photo', $entity);
 $url = base_path() . drupal_get_path_alias('node/' . $row->nid);
 
@@ -56,18 +49,18 @@ $extra = $extras[1];
 
 $embed = get_field_value('field_video', $entity);
 $is_video = $entity->type == 'video_product';
-
-
 ?>
 
-<?php if ($view->rendered_idx == 1): ?>
-  <div class="homepage__product-detail" style="background-image: url('<?php echo $bg; ?>');">
-<?php else: ?>
-  <div class="homepage__product-detail homepage__product-detail--row" style="background-image: url('<?php echo $bg; ?>');">
-<?php endif; ?>
-  <div class="homepage__product-info">
-    <h2 class="homepage__product-title">「<?php echo $title; ?>」</h2>
-    <p class="homepage__product-date-place"><?php echo $extra; ?></p>
+
+<li class="related__item">
+  <?php if ($is_video): ?>
+    <?php print $embed; ?>
+  <?php else: ?>
+    <div class="related__item-image" style="background-image:url('<?php echo $bg; ?>');"></div>
+  <?php endif; ?>
+  <div class="related__item-info">
+    <h2 class="related__item-title">「<?php echo $title; ?>」</h2>
+    <p class="related__item-date-place"><?php echo $extra; ?></p>
     <a class="btn btn--light" href="<?php echo $url; ?>">查看活动</a>
   </div>
-</div>
+</li>

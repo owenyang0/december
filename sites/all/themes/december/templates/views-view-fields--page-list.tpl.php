@@ -39,7 +39,7 @@ $title = $entity->title;
 $info = get_field_value('field_information', $entity);
 $main = get_field_value('field_main_text', $entity);
 $image = get_field_value('field_photo', $entity);
-$url = drupal_get_path_alias('node/' . $row->nid);
+$url = base_path() . drupal_get_path_alias('node/' . $row->nid);
 
 preg_match("/src=\"(.*?)\"/", $image, $matches);
 $bg = $matches[1];
