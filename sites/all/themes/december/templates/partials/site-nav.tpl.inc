@@ -21,10 +21,14 @@ $absolute_path = $_GET['q'];
       </a>
     </li>
     <li class="site-nav__logo">
+      <a href="/">
       <img src="/sites/all/themes/december/images/logo.png">
+      </a>
     </li>
     <li class="site-nav__logo--fix">
+      <a href="/">
       <img src="/sites/all/themes/december/images/logo_small.png">
+      </a>
     </li>
     <li class="site-nav__item<?php if ($absolute_path == 'about') echo ' active'; ?>">
       <a href="/about">
