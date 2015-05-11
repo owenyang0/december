@@ -28,7 +28,7 @@
     <p><?php print t('Thank you, your submission has been received.'); ?></p>
   <?php endif; ?>
   <div class="links">
-    <a href="<?php print $url; ?>">&nbsp;</a>
+    <a href="/contact-us">&nbsp;</a>
   </div>
 </div>
 
