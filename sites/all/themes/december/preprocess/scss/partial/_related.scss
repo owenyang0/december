@@ -39,7 +39,7 @@
     opacity: 0;
     background: rgba(0, 0, 0, 0.7);
     color: $gold;
-    transition: 0.3s ease-in;
+    transition: 0.5s ease-in;
   }
 
   .related__item-title {
@@ -48,13 +48,13 @@
 
     &:after {
       content: ' ';
-      border-bottom: 2px solid;
+      border-bottom: 1px solid;
       display: block;
-      position: absolute;
-      min-width: 20px;
-      left: 49%;
-      right: 49%;
       padding-top: 20px;
+      width: 20px;
+      margin: 0 auto;
+
+      transition: width 0.5s 0.2s;
     }
   }
 
@@ -65,6 +65,12 @@
   &:hover {
     .related__item-info {
       opacity: 1;
+    }
+
+    .related__item-title {
+      &:after {
+        width: 140px;
+      }
     }
   }
 }

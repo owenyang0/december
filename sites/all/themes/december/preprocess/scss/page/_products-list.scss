@@ -14,11 +14,19 @@
   .show {
     width: 78%;
     float: left;
+    overflow: hidden;
+
+    &:hover {
+      .image, embed {
+        transform: scale(1.05);
+      }
+    }
 
     .image,
     embed {
       width: 100%;
       height: 430px;
+      transition: all 3s ease-out;
     }
 
     .image {

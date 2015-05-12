@@ -53,13 +53,13 @@
 
   &:after {
     content: ' ';
-    border-bottom: 2px solid;
+    border-bottom: 1px solid;
     display: block;
-    position: absolute;
-    min-width: 20px;
-    left: 49%;
-    right: 49%;
     padding-top: 20px;
+    width: 20px;
+    margin: 0 auto;
+
+    transition: width 0.5s 0.2s;
   }
 }
 
@@ -92,13 +92,13 @@
 
     &:after {
       content: ' ';
-      border-bottom: 2px solid;
+      border-bottom: 1px solid;
       display: block;
-      position: absolute;
-      min-width: 20px;
-      left: 49%;
-      right: 49%;
       padding-top: 20px;
+      width: 20px;
+      margin: 0 auto;
+
+      transition: width 0.5s 0.2s;
     }
   }
 
@@ -109,6 +109,12 @@
   &:hover {
     .homepage__product-info {
       opacity: 1;
+    }
+
+    .homepage__product-title {
+      &:after {
+        width: 140px;
+      }
     }
   }
 }

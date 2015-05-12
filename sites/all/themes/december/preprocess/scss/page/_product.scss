@@ -36,10 +36,19 @@
 
 .product__photo-item {
   margin: 10px 0;
+  p {
+    overflow: hidden;
+  }
+
   img {
     width: 100% !important;
     height: auto !important;
-    //TODO: change to background image if needed;
+
+    transition: all 3s ease-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 

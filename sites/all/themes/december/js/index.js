@@ -58,12 +58,12 @@
       $(this).animate({
         'width': '300px',
         'height': '300px'
-      }, 200);
+      }, 500);
     }, function() {
       $(this).animate({
         'width': '280px',
         'height': '280px'
-      }, 200);
+      }, 500);
     });
 
     $('.contact__content-media .icon').hover(function() {
