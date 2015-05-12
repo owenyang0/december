@@ -1,5 +1,13 @@
 <?php
 
+  function get_field_value($fld, $similar) {
+    return !empty($similar->{$fld}) ? $similar->{$fld}['und'][0]['value'] : array();
+  }
+
+  function get_similar_node($fld, $node) {
+    return !empty($node->{$fld}) ? $node->{$fld}['und'][0]['node'] : array();
+  }
+
   function get_related_node($original_node) {
     $related_nodes = _get_related_node($original_node);
     $nodes = array();

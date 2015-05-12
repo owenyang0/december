@@ -1,6 +1,4 @@
-<?php
-  include_once "utils/common-utils.inc";
-?>
+<?php include_once "utils/common-utils.inc"; ?>
 
 <div class="product__detail">
   <h1 class="product__title">
@@ -21,3 +19,5 @@
     ?>
   </ul>
 </div>
+
+<?php include_once "partials/similar.tpl.inc"; ?>

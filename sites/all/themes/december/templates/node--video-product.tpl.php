@@ -1,6 +1,4 @@
-<?php
-  include_once "utils/common-utils.inc";
-?>
+<?php include_once "utils/common-utils.inc"; ?>
 
 <div class="product__detail">
   <h1 class="product__title">
@@ -17,3 +15,5 @@
     <?php echo $node->field_video['und']['0']['value']; ?>
   </div>
 </div>
+
+<?php include_once "partials/similar.tpl.inc"; ?>
