@@ -79,3 +79,10 @@
     @include title-quote()
   }
 }
+
+.view-products-view {
+  .product__detail {
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 30px;
+  }
+}
