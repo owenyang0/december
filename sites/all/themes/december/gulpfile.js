@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var del = require('del');
 var connect = require('gulp-connect');
+var prefix = require('gulp-autoprefixer');
 
 var config = {
   sass: {
@@ -26,8 +27,9 @@ gulp.task('clean', function(cb){
 
 gulp.task('sass', function(){
   return gulp.src(config.sass.path + '**/*' + config.sass.extension)
-             .pipe(sass(config.sass.options))
-             .pipe(gulp.dest(config.css.path));
+    .pipe(sass(config.sass.options))
+    .pipe(prefix(['> 1%, last 2 versions, Firefox ESR, Opera 12.1, Safari, IE 8']))
+    .pipe(gulp.dest(config.css.path));
 });
 
 gulp.task('watch', function(){
