@@ -270,7 +270,8 @@
     Bar.prototype.update = function(prog) {
       this.circle = this.circle || new ProgressBar.Circle('.pace-activity', {
         color: '#c88e50',
-        strokeWidth: 0.5
+        strokeWidth: 0.5,
+        duration: 100
       });
 
       this.circle.set(prog / 100);
