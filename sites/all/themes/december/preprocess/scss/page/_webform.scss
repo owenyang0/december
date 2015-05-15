@@ -168,6 +168,10 @@ input {
     border-bottom: 1px solid transparent;
   }
 
+  &[type='submit']:focus {
+    border-bottom-color: #000;
+  }
+
   &.used {
     border-bottom: 1px solid $gold;
   }
