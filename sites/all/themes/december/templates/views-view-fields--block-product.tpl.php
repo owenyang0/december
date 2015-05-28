@@ -61,13 +61,13 @@ $is_video = $entity->type == 'video_product';
 ?>
 
 <?php if ($view->rendered_idx == 1): ?>
-  <div class="homepage__product-detail" style="background-image: url('<?php echo $bg; ?>');">
+  <div class="homepage__product-detail">
 <?php else: ?>
-  <div class="homepage__product-detail homepage__product-detail--row" style="background-image: url('<?php echo $bg; ?>');">
+  <div class="homepage__product-detail homepage__product-detail--row">
 <?php endif; ?>
+  <div class="image" style="background-image: url('<?php echo $bg; ?>');"></div>
   <div class="homepage__product-info">
     <h2 class="homepage__product-title">「<?php echo $title; ?>」</h2>
     <p class="homepage__product-date-place"><?php echo $extra; ?></p>
-    <a class="btn btn--light" href="<?php echo $url; ?>">查看活动</a>
   </div>
 </div>
