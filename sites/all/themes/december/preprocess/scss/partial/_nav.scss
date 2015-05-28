@@ -176,7 +176,7 @@
       -webkit-transform-style: preserve-3d;
       -moz-backface-visibility: hidden;
 
-      @include animation('hover-out 0.25s forwards');
+      @include animation('hover-out-small 0.25s forwards');
     }
   }
 

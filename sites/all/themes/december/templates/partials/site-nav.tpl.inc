@@ -6,7 +6,7 @@ $absolute_path = $_GET['q'];
 <nav class="site-nav">
   <ul class="site-nav__list">
     <li class="site-nav__item<?php if ($absolute_path == 'products-list' || $absolute_path == 'products-gallery') echo ' active'; ?>">
-      <a href="/products-list?tid=All">
+      <a href="/products-gallery?tid=All">
         <div>
           <span>WORK</span>
           <span>作品展示</span>

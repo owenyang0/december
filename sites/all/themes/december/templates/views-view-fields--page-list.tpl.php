@@ -63,11 +63,13 @@ $is_video = $entity->type == 'video_product';
     </div>
   </div>
   <div class="show">
+    <a class="show-link" href="<?php echo $url; ?>">
     <?php if ($is_video): ?>
       <?php print $embed; ?>
     <?php else: ?>
       <div class="image" style="background-image:url('<?php echo $bg;
       ?>');"></div>
     <?php endif; ?>
+    </a>
   </div>
 </div>
