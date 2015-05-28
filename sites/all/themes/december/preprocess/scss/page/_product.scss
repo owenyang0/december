@@ -44,10 +44,10 @@
     width: 100% !important;
     height: auto !important;
 
-    transition: all 3s ease-out;
+    transition: all .5s ease-out;
 
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.25);
     }
   }
 }
@@ -73,10 +73,10 @@
     .img, embed {
       height: 350px;
       width: 100%;
-      transition: all 3s ease-out;
+      transition: all .5s ease-out;
 
       &:hover {
-        transform: scale(1.05);
+        transform: scale(1.25);
       }
 
     }
