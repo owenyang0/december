@@ -11,9 +11,9 @@
     });
 
     var $nav = $('.site-nav');
-    var offsetTop = $nav.offset().top + 50;
+    var offsetTop = $nav.offset().top;
     $(window).resize(function(){
-      offsetTop = $nav.offset().top + 50;
+      offsetTop = $nav.offset().top;
     });
 
     $(window).scroll(function(){

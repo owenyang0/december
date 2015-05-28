@@ -82,9 +82,11 @@
 
 .site-nav {
   background: black;
+  font-size: 12px;
 
   .site-nav__logo--fix {
     display: none;
+    width: 60px;
   }
 
   &.fix {
@@ -111,9 +113,9 @@
         }
       }
       a {
-        span {
-          @include animation('hover-out-small 0.25s forwards');
-        }
+//        span {
+//          @include animation('hover-out-small 0.25s forwards');
+//        }
 
         &:hover {
           span {
@@ -157,6 +159,7 @@
 
 .site-nav__item a {
   div {
+    transition: all .3s ease;
     height: 120px;
     line-height: 100px;
     overflow: hidden;
