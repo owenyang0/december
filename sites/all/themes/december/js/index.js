@@ -20,9 +20,11 @@
       var isToFix = $(window).scrollTop() > offsetTop;
       if (isToFix && !$nav.hasClass('fix')) {
         $nav.addClass('fix');
+        $('.december').addClass('body-fix');
       }
       if (!isToFix && $nav.hasClass('fix')) {
         $nav.removeClass('fix');
+        $('.december').removeClass('body-fix');
       }
     });
 
@@ -56,14 +58,14 @@
     var map = $('.contact__content-map .map');
     map.hover(function() {
       $(this).animate({
-        'width': '300px',
-        'height': '300px'
-      }, 500);
+        'width': '310px',
+        'height': '310px'
+      }, 200);
     }, function() {
       $(this).animate({
-        'width': '280px',
-        'height': '280px'
-      }, 500);
+        'width': '300px',
+        'height': '300px'
+      }, 200);
     });
 
     $('.contact__content-media .icon').hover(function() {
