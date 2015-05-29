@@ -1,5 +1,5 @@
 .related {
-  padding: 40px 8px 50px;
+  padding: 0 8px 75px;
   text-align: center;
   font-size: 12px;
   max-width: 1020px;
@@ -7,14 +7,14 @@
 }
 
 .related__title {
-  font-size: 20px;
-  margin: 0 0 20px;
+  font-size: 25px;
+  margin: 0 0 30px;
 }
 
 .related__item {
-  height: 400px;
+  height: 300px;
 
-  @include col(1/3);
+  @include col(1/3, $gutter: 1.5);
 }
 
 .related__item {
@@ -44,7 +44,7 @@
 
   .related__item-title {
     font-size: 30px;
-    padding: 100px 0;
+    margin: 25% 0 20px;
 
     &:after {
       content: ' ';
