@@ -114,9 +114,9 @@
         }
       }
       a {
-//        span {
+        span {
 //          @include animation('hover-out-small 0.25s forwards');
-//        }
+        }
 
         &:hover {
           span {
@@ -159,8 +159,12 @@
 }
 
 .site-nav__item a {
+  div span {
+    @include animation('hover-out 0.25s forwards');
+  }
+
   div {
-    transition: all .3s ease;
+    transition: all .3s ease-out;
     height: 120px;
     line-height: 100px;
     overflow: hidden;
@@ -175,8 +179,6 @@
       -webkit-backface-visibility: hidden;
       -webkit-transform-style: preserve-3d;
       -moz-backface-visibility: hidden;
-
-      @include animation('hover-out-small 0.25s forwards');
     }
   }
 

@@ -75,12 +75,6 @@
     });
 
 
-
-
-
-
-
-
     var $bar = $('<span class="bar"></span>');
     var $error = $('<div class="validate-error">无法提交，请确认以上内容是否填写正确</div>');
     var $formItem = $('.form-item');
