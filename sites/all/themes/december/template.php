@@ -14,4 +14,9 @@ function december_preprocess_page(&$vars){
   }
 }
 
+
+function december_form_element_label($variables) {
+  return '';
+}
+
 ?>

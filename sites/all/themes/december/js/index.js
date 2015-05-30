@@ -104,9 +104,9 @@
     //  $('.form-actions').before($error);
     //}
 
-    $formItem.each(function() {
-      $(this).find('input').after($(this).children('label'));
-    });
+    //$formItem.each(function() {
+    //  $(this).find('input').after($(this).children('label'));
+    //});
 
     fields.blur(function() {
       checkUsed($(this));

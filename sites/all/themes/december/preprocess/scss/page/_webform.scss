@@ -1,7 +1,9 @@
-
+.webform-client-form {
+  margin-top: 20px;
+}
 
 .block-webform {
-  padding: 40px 8px 50px;
+  padding: 60px 8px 50px;
   text-align: center;
   font-size: 12px;
   max-width: 560px;
@@ -163,6 +165,8 @@ input {
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #757575;
+  font-family: Times, "Microsoft Yahei", STHeiti, sans-serif;
+
 
   &:focus {
     border-bottom: 1px solid transparent;
@@ -173,7 +177,9 @@ input {
   }
 
   &.used {
-    border-bottom: 1px solid $gold;
+    color: #000;
+//    border-bottom: 1px solid $gold;
+    border-bottom: 1px solid #000;
   }
 }
 
@@ -213,6 +219,12 @@ input.error ~ label {
 input:focus ~ .bar:before,
 input:focus ~ .bar:after {
   width: 50%;
+}
+
+input.used:focus ~ .bar:before,
+input.used:focus ~ .bar:after {
+  color: #000;
+  background-color: #000;
 }
 
 input.error:focus ~ .bar:before,
