@@ -8,8 +8,8 @@ $full_path = $current_path . '?tid=';
 
 <div class="control">
   <ul class="control__type">
-    <li class="control__type--unit <?php if($tid == 'All') echo ' active'; ?>">
-      <a class="link" href="<?php echo $full_path . 'All'; ?>">婚礼</a>
+    <li class="control__type--unit <?php if($tid == 4) echo ' active'; ?>">
+      <a class="link" href="<?php echo $full_path . '4'; ?>">婚礼</a>
     </li>
     <li class="control__type--unit <?php if($tid == 1) echo ' active'; ?>">
       <a class="link" href="<?php echo $full_path . '1'; ?>">求婚</a>
