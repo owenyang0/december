@@ -44,7 +44,7 @@
     width: 100% !important;
     height: auto !important;
 
-    transition: all .5s ease-out;
+    transition: all .7s ease-out;
 
     &:hover {
       transform: scale(1.25);
@@ -73,16 +73,16 @@
     .img, embed {
       height: 350px;
       width: 100%;
-      transition: all .5s ease-out;
-
-      &:hover {
-        transform: scale(1.25);
-      }
-
     }
 
     .img {
       @include bg-img();
+
+      transition: all .7s ease-out;
+
+      &:hover {
+        transform: scale(1.25);
+      }
     }
   }
 
