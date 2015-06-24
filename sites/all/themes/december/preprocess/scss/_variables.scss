@@ -3,6 +3,8 @@ $hero-height: 800px;
 $gold: #c88e50;
 $error: red;
 
+$bp-width: 900px;
+
 @mixin bg-img() {
   background-position: center;
   background-size: cover;
@@ -28,5 +30,11 @@ $error: red;
     left: 49%;
     right: 49%;
     padding-top: 20px;
+  }
+}
+
+@mixin bp($max-width) {
+  @media screen and (max-width: $max-width) {
+    @content;
   }
 }

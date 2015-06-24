@@ -84,10 +84,34 @@
 .site-nav {
   background: black;
   font-size: 12px;
+//  @include cf();
+
+  .site-nav__logo,
+  .site-nav__logo--fix {
+    @include bp($bp-width) {
+      display: none;
+    }
+  }
 
   .site-nav__logo--fix {
     display: none;
     width: 60px;
+  }
+
+  .site-nav__toggle-btn {
+    display: none;
+
+    @include bp($bp-width) {
+      display: block;
+      position: relative;
+      font-size: 26px;
+      z-index: 10;
+      text-align: center;
+      float: right;
+      color: $gold;
+      padding-right: 10px;
+      cursor: pointer;
+    }
   }
 
   &.fix {
@@ -101,6 +125,10 @@
     }
     .site-nav__logo--fix {
       display: inline-block;
+
+      @include bp($bp-width) {
+        display: none;
+      }
     }
 
     .site-nav__item {
@@ -131,6 +159,7 @@
     }
   }
 }
+
 .site-nav__list {
   text-align: center;
 
@@ -171,6 +200,18 @@
     padding: 10px 0;
     position: relative;
 
+    @include bp($bp-width) {
+      width: 100%;
+      height: 50px;
+      line-height: 30px;
+      overflow: visible;
+      padding: 10px 100px;
+
+      span:nth-child(2) {
+        display: none;
+      }
+    }
+
     span {
       border-bottom: 4px solid transparent;
       padding: 0px 5px 6px;
@@ -185,6 +226,60 @@
   &:hover {
     span {
       @include animation('hover-in 0.25s forwards');
+    }
+  }
+}
+
+.site-nav__content {
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: #000;
+  z-index: 10;
+
+  @include bp($bp-width) {
+    display: none;
+  }
+}
+
+.site-nav__list {
+  @include bp($bp-width) {
+    display: none;
+  }
+}
+
+.site-nav {
+
+  @include bp($bp-width) {
+    height: 80px;
+  }
+
+  .logo {
+    display: none;
+
+    @include bp($bp-width) {
+      display: block;
+      float: left;
+      padding: 26px 15px;
+    }
+  }
+
+  .site-nav__input {
+    display: none;
+    visibility: hidden;
+  }
+
+  .site-nav__input:checked + .site-nav__content {
+    display: block;
+    top: 80px;
+
+    .site-nav__list {
+      display: block;
+      padding-bottom: 30px;
+    }
+
+    .site-nav__item {
+      display: block;
     }
   }
 }

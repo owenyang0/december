@@ -148,7 +148,7 @@ label {
   font-size: 14px;
   font-weight: normal;
   position: absolute;
-  pointer-events: none;
+//  pointer-events: none;
   left: 5px;
   top: 20px;
   transition: all 0.2s ease;
@@ -158,10 +158,10 @@ input {
   font-size: 14px;
   font-weight: normal;
   padding: 10px 10px 10px 5px;
-  -webkit-appearance: none;
-  display: block;
+//  -webkit-appearance: none;
+//  display: block;
   color: $gold;
-  width: 100%;
+//  width: 100%;
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #757575;

@@ -78,7 +78,7 @@
     var $bar = $('<span class="bar"></span>');
     var $error = $('<div class="validate-error">无法提交，请确认以上内容是否填写正确</div>');
     var $formItem = $('.form-item');
-    var fields = $('input').not('input[type="submit"]').not('input[type="hidden"]');
+    var fields = $('.webform-client-form input').not('input[type="submit"]').not('input[type="hidden"]');
     var $form = $formItem.find('input');
 
     var fieldError = {
@@ -126,7 +126,7 @@
 
     // url active
     //$nav = $('#block-block-1 .site-nav');
-    if ($nav.length) {
+    if ($nav.length && $(window).width() > 480) {
       var pathname = $(location)[0].pathname;
 
       var urlMap = {
