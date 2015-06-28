@@ -140,36 +140,42 @@
       urlMap[pathname] && $(urlMap[pathname]).addClass('active');
     }
 
+    if (!isSmallDevice()) {
+      console.log('ff')
+      parallax();
+    }
 
-    // parallax
-    var $ring = $('.services__hero--ring,' +
-      '.services__hero--footer,' +
-      '.homepage__hero,' +
-      '.homepage__sub-hero');
+    function parallax() {
+      // parallax
+      var $ring = $('.services__hero--ring,' +
+        '.services__hero--footer,' +
+        '.homepage__hero,' +
+        '.homepage__sub-hero');
+      var posYOrig = -40;
+      $ring.css('background-position', '50% ' + posYOrig + 'px');
 
-    var posYOrig = -40;
-    $ring.css('background-position', '50% ' + posYOrig + 'px');
-
-    $(document).scroll(function() {
-      var top = $(document).scrollTop();
-
-      $ring.each(function(idx, ele) {
-        var self = $(this);
-        var otop = self.offset().top;
-        var posY = posYOrig - (top / 2) + 'px';
-        var position = '50% ' + posY;
-        var winHeight = $(window).height();
-
-        if (otop < winHeight) {
-          self.css('background-position', position);
-        }
-        else if (top > otop - winHeight) {
-          posY = posYOrig - ((top - otop) / 2) + 'px';
-          position = '50% ' + posY;
-
-          self.css('background-position', position);
-        }
+      $(document).scroll(function () {
+        var top = $(document).scrollTop();
+        $ring.each(function (idx, ele) {
+          var self = $(this);
+          var otop = self.offset().top;
+          var posY = posYOrig - (top / 2) + 'px';
+          var position = '50% ' + posY;
+          var winHeight = $(window).height();
+          if (otop < winHeight) {
+            self.css('background-position', position);
+          }
+          else if (top > otop - winHeight) {
+            posY = posYOrig - ((top - otop) / 2) + 'px';
+            position = '50% ' + posY;
+            self.css('background-position', position);
+          }
+        });
       });
-    });
+    }
+
+    function isSmallDevice() {
+      return $(window).width() <= 480;
+    }
   });
 })(jQuery);
