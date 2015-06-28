@@ -179,6 +179,10 @@
       -moz-animation: none;
       -o-animation: none;
       animation: none;
+
+      @include bp($bp-width) {
+        border-color: transparent;
+      }
     }
   }
 }
@@ -255,6 +259,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
   }
 
   .logo {

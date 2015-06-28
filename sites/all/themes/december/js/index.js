@@ -11,22 +11,6 @@
     });
 
     var $nav = $('.site-nav');
-    var offsetTop = $nav.offset().top;
-    $(window).resize(function(){
-      offsetTop = $nav.offset().top;
-    });
-
-    $(window).scroll(function(){
-      var isToFix = $(window).scrollTop() > offsetTop;
-      if (isToFix && !$nav.hasClass('fix')) {
-        $nav.addClass('fix');
-        $('.december').addClass('body-fix');
-      }
-      if (!isToFix && $nav.hasClass('fix')) {
-        $nav.removeClass('fix');
-        $('.december').removeClass('body-fix');
-      }
-    });
 
     $('.product__next > li').click(function (e) {
       e.preventDefault();
@@ -122,27 +106,45 @@
       }
     }
 
-
-
-    // url active
-    //$nav = $('#block-block-1 .site-nav');
-    if ($nav.length && $(window).width() > 480) {
-      var pathname = $(location)[0].pathname;
-
-      var urlMap = {
-        '/products-list': '.site-nav__item--prod',
-        '/products-gallery': '.site-nav__item--prod',
-        '/service-process': '.site-nav__item--service',
-        '/about': '.site-nav__item--about',
-        '/contact-us': '.site-nav__item--contact'
-      };
-
-      urlMap[pathname] && $(urlMap[pathname]).addClass('active');
+    if (!isSmallDevice()) {
+      console.info('desktop version');
+      parallax();
+      urlActive();
+      scroll2Fix();
     }
 
-    if (!isSmallDevice()) {
-      console.log('ff')
-      parallax();
+    function scroll2Fix() {
+      var offsetTop = $nav.offset().top;
+      $(window).resize(function () {
+        offsetTop = $nav.offset().top;
+      });
+      $(window).scroll(function () {
+        var isToFix = $(window).scrollTop() > offsetTop;
+        if (isToFix && !$nav.hasClass('fix')) {
+          $nav.addClass('fix');
+          $('.december').addClass('body-fix');
+        }
+        if (!isToFix && $nav.hasClass('fix')) {
+          $nav.removeClass('fix');
+          $('.december').removeClass('body-fix');
+        }
+      });
+    }
+
+    function urlActive() {
+    // url active
+      //$nav = $('#block-block-1 .site-nav');
+      if ($nav.length) {
+        var pathname = $(location)[0].pathname;
+        var urlMap = {
+          '/products-list': '.site-nav__item--prod',
+          '/products-gallery': '.site-nav__item--prod',
+          '/service-process': '.site-nav__item--service',
+          '/about': '.site-nav__item--about',
+          '/contact-us': '.site-nav__item--contact'
+        };
+        urlMap[pathname] && $(urlMap[pathname]).addClass('active');
+      }
     }
 
     function parallax() {

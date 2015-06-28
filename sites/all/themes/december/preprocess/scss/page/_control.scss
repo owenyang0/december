@@ -48,6 +48,10 @@
   a:hover {
     @include link-hover();
   }
+
+  @include bp($bp-width) {
+    display: none;
+  }
 }
 
 .item-list .pager {
