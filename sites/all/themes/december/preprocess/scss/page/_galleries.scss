@@ -9,6 +9,10 @@
   position: relative;
   display: block;
 
+  @include bp($bp-width) {
+    height: 200px;
+  }
+
   .image {
     height: 100%;
     display: block;
@@ -23,6 +27,10 @@
     left: 0;
     right: 0;
     bottom: 0;
+
+    @include bp($bp-width) {
+      position: static;
+    }
   }
 
   &:hover {
@@ -34,10 +42,33 @@
 
 .galleries__unit--high {
   height: 420px;
+
+  @include bp($bp-width) {
+    height: 250px;
+  }
 }
 
 .galleries__column {
   @include col(1/3, $gutter: 1.6);
+
+  @include bp($bp-width) {
+    @include col(1/2, $cycle: 2);
+
+    &:nth-child(3) {
+      width: 100%;
+      .galleries__unit, .galleries__unit--high {
+        width: 48.5%;
+        margin-right: 3%;
+        float: left;
+
+        &:nth-child(2) {
+          height: 466px;
+          margin-right: 0;
+          float: right;
+        }
+      }
+    }
+  }
 
   font-size: 0;
 }
