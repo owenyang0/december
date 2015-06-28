@@ -54,6 +54,10 @@
     visibility: visible;
     z-index: 10;
   }
+
+  @include bp($bp-width) {
+    padding-top: 140px;
+  }
 }
 
 .lightbox__close {
@@ -63,7 +67,13 @@
   height: 30px;
   width: 30px;
 
-  background: url(../images/close.png) top right no-repeat;
+  background: url(../images/close.png) center no-repeat;
+
+  @include bp($bp-width) {
+    height: 20px;
+    width: 20px;
+    top: 30px;
+  }
 
   &:hover {
     opacity: 0.7;
