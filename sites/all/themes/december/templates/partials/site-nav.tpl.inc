@@ -7,7 +7,7 @@ $absolute_path = $_GET['q'];
     <img src="/sites/all/themes/december/images/logo_small.png">
   </a>
   <label class="site-nav__toggle-btn" for="site-nav-toggle">
-    <i class="icon icon--list">&nbsp;</i>
+    <span class="menu--hamburg">&nbsp;</span>
   </label>
   <input class="site-nav__input" type="checkbox" id="site-nav-toggle"/>
   <div class="site-nav__content">

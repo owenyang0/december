@@ -106,6 +106,12 @@
       }
     }
 
+
+    // add class to menu
+    $('.site-nav__toggle-btn').click(function() {
+      $(this).toggleClass('active');
+    });
+
     if (!isSmallDevice()) {
       console.info('desktop version');
       parallax();
