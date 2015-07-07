@@ -44,5 +44,5 @@ foreach ($rows as $id => $row) {
       </div>
     <?php endif; ?>
   <?php endforeach; ?>
-  <a href="/products-list?tid=All">查看所有作品 &gt;</a>
+  <a href="/products-gallery?tid=All">查看所有作品 &gt;</a>
 </section>

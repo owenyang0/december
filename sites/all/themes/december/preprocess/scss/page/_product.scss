@@ -126,6 +126,10 @@
   .background {
     .img, embed {
       height: 520px;
+
+      @include bp($bp-width) {
+        height: 330px;
+      }
     }
   }
 }
@@ -152,7 +156,7 @@
 
       @include bp($bp-width) {
         width: 100%;
-        height: 520px;
+        height: 330px;
       }
     }
 
@@ -168,7 +172,7 @@
       width: 100%;
 
       .img, embed {
-        height: 520px;
+        height: 330px;
       }
     }
   }

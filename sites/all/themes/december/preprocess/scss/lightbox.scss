@@ -81,6 +81,7 @@ body:after {
   top: 50%;
   cursor: pointer;
   display: block;
+  z-index: 9;
 }
 
 .lb-nav a.lb-prev {
