@@ -5,6 +5,10 @@
 .contact__hero {
   height: 670px;
   @include bg-img();
+
+  @include bp($bp-width) {
+    height: 580px;
+  }
 }
 .contact__mask {
 
@@ -28,6 +32,7 @@
   bottom: 80px;
   text-align: center;
   width: 100%;
+  @include cf();
 
   li {
     width: 15%;
@@ -66,6 +71,23 @@
       color: #fff;
     }
   }
+
+  @include bp($bp-width) {
+    position: static;
+
+    li {
+      width: 45%;
+      text-align: left;
+      float: left;
+      margin-bottom: 15px;
+    }
+
+    .desc {
+      position: static;
+      display: inline-block;
+      width: 60%;
+    }
+  }
 }
 .contact__content-map {
   margin-top: 90px;
@@ -87,6 +109,18 @@
     line-height: 20px;
     color: #fff;
     margin-top: 30px;
+  }
+
+  @include bp($bp-width) {
+    .map {
+      width: 250px;
+      height: 250px;
+    }
+
+    .local {
+      display: block;
+      margin-top: 10px;
+    }
   }
   // &:hover {
   //   cursor: pointer;

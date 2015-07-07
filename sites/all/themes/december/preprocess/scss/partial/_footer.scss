@@ -53,6 +53,7 @@
     opacity: 1;
     visibility: visible;
     z-index: 10;
+    text-align: center;
   }
 
   @include bp($bp-width) {
