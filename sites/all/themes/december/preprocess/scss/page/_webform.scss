@@ -38,9 +38,17 @@
     }
   }
 
+
+  @include bp($bp-width) {
+    &.col-2 {
+      width: 100%;
+    }
+  }
+
   .description {
     margin-top: 10px;
   }
+
 
 //  select {
 //    -webkit-appearance: none;
