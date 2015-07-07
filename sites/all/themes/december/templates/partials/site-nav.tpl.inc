@@ -4,7 +4,7 @@ $absolute_path = $_GET['q'];
 
 <nav class="site-nav">
   <a class="logo" href="/">
-    <img src="/sites/all/themes/december/images/logo_small.png">
+    <img src="/sites/all/themes/december/images/logo_medium.png">
   </a>
   <label class="site-nav__toggle-btn" for="site-nav-toggle">
     <span class="menu--hamburg">&nbsp;</span>
