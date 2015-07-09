@@ -8,6 +8,7 @@
   margin-top: 16px;
   position: relative;
   display: block;
+  overflow: hidden;
 
   @include bp($bp-width) {
     height: 200px;
@@ -17,6 +18,7 @@
     height: 100%;
     display: block;
     @include bg-img();
+    transition: all .7s ease-out;
   }
 
   .mask {
@@ -36,6 +38,10 @@
   &:hover {
     .mask {
       opacity: 0;
+    }
+
+    .image {
+      transform: scale(1.25);
     }
   }
 }

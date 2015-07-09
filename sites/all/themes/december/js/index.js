@@ -39,26 +39,6 @@
       $listPager.appendTo($('.product__detail--list'));
     }
 
-    var map = $('.contact__content-map .map');
-    map.hover(function() {
-      $(this).animate({
-        'width': '310px',
-        'height': '310px'
-      }, 200);
-    }, function() {
-      $(this).animate({
-        'width': '300px',
-        'height': '300px'
-      }, 200);
-    });
-
-    $('.contact__content-media .icon').hover(function() {
-      $(this).next('.desc').fadeIn();
-    }, function() {
-      $(this).next('.desc').fadeOut();
-    });
-
-
     var $bar = $('<span class="bar"></span>');
     var $error = $('<div class="validate-error">无法提交，请确认以上内容是否填写正确</div>');
     var $formItem = $('.form-item');
@@ -117,6 +97,27 @@
       parallax();
       urlActive();
       scroll2Fix();
+      contactControl();
+    }
+
+    function contactControl() {
+      var map = $('.contact__content-map .map');
+      map.hover(function () {
+        $(this).animate({
+          'width': '310px',
+          'height': '310px'
+        }, 200);
+      }, function () {
+        $(this).animate({
+          'width': '300px',
+          'height': '300px'
+        }, 200);
+      });
+      $('.contact__content-media .icon').hover(function () {
+        $(this).next('.desc').fadeIn();
+      }, function () {
+        $(this).next('.desc').fadeOut();
+      });
     }
 
     function scroll2Fix() {

@@ -65,9 +65,11 @@ $is_video = $entity->type == 'video_product';
 <?php else: ?>
   <div class="homepage__product-detail homepage__product-detail--row">
 <?php endif; ?>
-  <div class="image" style="background-image: url('<?php echo $bg; ?>');"></div>
-  <div class="homepage__product-info">
-    <h2 class="homepage__product-title">「<?php echo $title; ?>」</h2>
-    <p class="homepage__product-date-place"><?php echo $extra; ?></p>
-  </div>
+    <a class="show-link" href="<?php echo $url; ?>">
+      <div class="image" style="background-image: url('<?php echo $bg; ?>');"></div>
+      <div class="homepage__product-info">
+        <h2 class="homepage__product-title">「<?php echo $title; ?>」</h2>
+        <p class="homepage__product-date-place"><?php echo $extra; ?></p>
+      </div>
+    </a>
 </div>

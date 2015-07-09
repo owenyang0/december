@@ -60,6 +60,7 @@ $is_video = $entity->type == 'video_product';
 ?>
 
 <div class="product">
+  <a class="show-link" href="<?php echo $url; ?>">
   <div class="background">
     <?php if ($is_video): ?>
       <?php print $embed; ?>
@@ -71,4 +72,5 @@ $is_video = $entity->type == 'video_product';
     <a href="<?php echo $url; ?>" class="desc__title"><?php echo $title; ?></a>
     <div class="desc__info"><?php echo $extra; ?></div>
   </div>
+    </a>
 </div>
