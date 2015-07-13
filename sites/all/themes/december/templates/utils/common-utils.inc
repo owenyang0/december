@@ -8,6 +8,14 @@
     return !empty($node->{$fld}) ? $node->{$fld}['und'][0]['node'] : array();
   }
 
+  function get_pre_node($original_node) {
+    return _select_prenext_table($original_node)->fetchAssoc();
+  }
+
+  function get_next_node($original_node) {
+    return _select_prenext_table($original_node, FALSE)->fetchAssoc();
+  }
+
   function get_related_node($original_node) {
     $related_nodes = _get_related_node($original_node);
     $nodes = array();
@@ -52,6 +60,41 @@ function _select_related_table($original_node, $count = 3, $is_start = FALSE) {
       ), 'IN')
       ->condition('n.status', 1, '=')
       ->orderBy('created', 'DESC')
+      ->range(0, $count)
+      ->execute();
+
+  } else {
+    $result = db_select('node', 'n')
+      ->fields('n', array('nid', 'type'))
+      ->condition('n.type', array(
+        'photo_product',
+        'video_product'
+      ), 'IN')
+      ->condition('n.status', 1, '=')
+      ->condition('n.created', $original_node->created, '<')
+      ->orderBy('created', 'DESC')
+      ->range(0, $count)
+      ->execute();
+  }
+
+  return $result;
+}
+
+
+function _select_prenext_table($original_node, $is_pre = TRUE) {
+  $result = NULL;
+  $count = 1;
+
+  if ($is_pre) {
+    $result = db_select('node', 'n')
+      ->fields('n', array('nid', 'type'))
+      ->condition('n.type', array(
+        'photo_product',
+        'video_product'
+      ), 'IN')
+      ->condition('n.status', 1, '=')
+      ->condition('n.created', $original_node->created, '>')
+      ->orderBy('created', 'ASC')
       ->range(0, $count)
       ->execute();
 

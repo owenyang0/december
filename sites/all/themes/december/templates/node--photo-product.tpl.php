@@ -18,6 +18,8 @@
       }
     ?>
   </ul>
+
+  <?php include_once "partials/next-control.tpl.inc"; ?>
 </div>
 
 <?php include_once "partials/similar.tpl.inc"; ?>

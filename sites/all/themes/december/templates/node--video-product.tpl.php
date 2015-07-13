@@ -14,6 +14,8 @@
   <div class="product__video">
     <?php echo $node->field_video['und']['0']['value']; ?>
   </div>
+
+  <?php include_once "partials/next-control.tpl.inc"; ?>
 </div>
 
 <?php include_once "partials/similar.tpl.inc"; ?>

@@ -178,3 +178,12 @@
     }
   }
 }
+
+
+.product__control {
+  display: none;
+
+  @include bp($bp-width) {
+    display: block;
+  }
+}
