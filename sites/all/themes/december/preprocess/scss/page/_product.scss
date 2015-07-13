@@ -8,7 +8,8 @@
   margin: 0 auto;
 
   @include bp($bp-width) {
-    margin-top: 80px;
+    padding-top: 60px;
+
   }
 }
 

@@ -5,6 +5,12 @@
   text-align: center;
 }
 
+@include bp($bp-width) {
+  .slogan--service {
+    padding-top: 0;
+  }
+}
+
 .slogan__title, .process__title {
   font-size: 25px;
   text-transform: uppercase;
@@ -207,6 +213,10 @@
 
 .container--service-top {
   padding-top: 40px;
+
+  @include bp($bp-width) {
+    padding-top: 0;
+  }
 }
 .container--service-content {
   padding-bottom: 50px;

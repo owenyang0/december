@@ -252,6 +252,13 @@
   }
 }
 
+@include bp($bp-width) {
+  .homepage__content .site-nav {
+    position: absolute;
+    top: -550px;
+  }
+}
+
 .site-nav {
 
   @include bp($bp-width) {
