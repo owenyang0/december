@@ -205,6 +205,10 @@
   padding-right: 20px;
   text-align: right;
 
+  img {
+    width: 90px;
+  }
+
   @include bp($bp-width) {
     text-align: left;
     padding-left: 25%;
