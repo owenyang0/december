@@ -21,6 +21,20 @@
  * - $form['preview']: A renderable representing the entire submission preview.
  */
 ?>
+
+
+
+<?php
+
+/*print_r($_REQUEST);*/
+
+
+/*
+
+Array ( [Drupal_tableDrag_showWeight] => 0 [el-finder-last-finder] => IB-CS6qUHzfEULSLjFQhmpV3LSs1OO0LHBAXY56lbRk [SESS98c80c16a02a9b4a135eddfbdb9eabdb] => ZAhU3ATNlHjnfu3B6ifg8ixGsVYGpnhNOzVTslxL_R0 [webform-12] => Array ( [1437636728] => 1437636728 [1437637371] => 1437637371 ) [has_js] => 1 [q] => contact-us )
+ */
+?>
+
 <?php
   // Print out the progress bar at the top of the page
   print drupal_render($form['progressbar']);
